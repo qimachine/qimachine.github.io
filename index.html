@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qi Machine</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: white;
+            padding-top: 92px; /* Height of navbar + padding */
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            z-index: 1000;
+            height: 92px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar-content {
+            width: 1400px;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            height: 60px;
+            width: auto;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: rgb(74, 88, 128);
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: 'Roboto Condensed', sans-serif;
+            font-weight: 700;
+            transition: color 0.3s ease;
+            
+        }
+
+        .nav-links a:hover {
+            opacity: 0.8;
+        }
+
+        section {
+            padding: 80px 0 2rem;
+        }
+
+        .featured-wrapper {
+            background-color: rgb(245, 244, 241);
+        }
+
+        .featured {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .featured-label {
+            color: #445566;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+        }
+
+        .project-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .project-images {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            height: 600px; /* Adjust based on your needs */
+        }
+
+        .project-image {
+            position: absolute;
+            width: 280px; /* Adjust based on your needs */
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .image-1 {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 3;
+        }
+
+        .image-2 {
+            top: 45%;
+            left: 40%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+        }
+
+        .apple-logo {
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            bottom: 20%;
+            right: 20%;
+            z-index: 4;
+            background: black;
+            border-radius: 20px;
+            padding: 15px;
+        }
+
+        .project-content h1 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            font-weight: bold;
+        }
+
+        .project-content p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #333;
+            margin-bottom: 2rem;
+        }
+
+        .view-project-btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background-color: #445566;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-family: 'Roboto Condensed', sans-serif;
+            font-weight: 700;
+            transition: background-color 0.3s ease;
+        }
+
+        .view-project-btn:hover {
+            background-color: #556677;
+        }
+
+        .latest-projects {
+            padding: 4rem 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .navbar-content {
+                flex-direction: column;
+                padding: 1rem;
+            }
+
+            .nav-links {
+                /* flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+                width: 100%;
+                margin-top: 1rem; */
+
+                margin-left: 0;
+                margin-top: 1rem;
+                justify-content: center;
+            }
+
+            .project-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .project-content h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+      <div class="navbar-content">
+          <img src="./images/logo_v0.png" alt="Qi Machine" class="logo">
+          <div class="nav-links">
+              <a href="#projects">Projects</a>
+              <a href="#want-an-app">Want an App?</a>
+              <a href="#contact">Contact</a>
+          </div>
+      </div>
+    </nav>
+
+    <div class="featured-wrapper">
+        <section class="featured">
+            <div class="featured-label">Featured</div>
+            <div class="project-container">
+                <div class="project-images">
+                    <img src="./images/bwk/1.png" alt="BWK App Screenshot 1" class="project-image image-1">
+                    <img src="./images/bwk/2.png" alt="BWK App Screenshot 2" class="project-image image-2">
+                    <img src="./images/apple/applelogo.png" alt="Apple Logo" class="apple-logo">
+                </div>
+                <div class="project-content">
+                    <h1>BWK Breathwork App</h1>
+                    <p>Heart-centered professionally guided breathwork sessions to calm, clear, and energize. Easy to follow breaths with intuitively chosen music.</p>
+                    <a href="#" class="view-project-btn">VIEW PROJECT DETAILS</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="latest-projects">
+        <div class="container">
+            <h2 class="section-title">Latest Projects</h2>
+            <!-- Project cards will go here -->
+        </div>
+    </section>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
