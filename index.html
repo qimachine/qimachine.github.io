@@ -85,6 +85,12 @@
             padding: 4rem 2rem;
         }
 
+        .latest-projects {
+          max-width: 1400px;
+          margin: 0 auto;
+          padding: 4rem 2rem;
+        }
+
         .project-content .featured-label {
             color: #445566;
             font-size: 0.85rem;
@@ -116,6 +122,11 @@
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
 
+        .projects .project-image {
+          width: 180px;
+          height: auto;
+        }
+
         .image-1 {
             top: 50%;
             left: 50%;
@@ -139,7 +150,8 @@
             z-index: 4;
             background: black;
             border-radius: 20px;
-            padding: 15px;
+            padding: 10px;
+            border: 3px solid silver;
         }
 
         .android-logo {
@@ -151,7 +163,8 @@
           z-index: 4;
           background: black;
           border-radius: 20px;
-          padding: 15px;
+          padding: 10px;
+          border: 3px solid silver;
         }
 
         .apple-android-logo {
@@ -163,8 +176,16 @@
           z-index: 4;
           background: rgba(150, 150, 150, 0.96);
           border-radius: 20px;
-          padding: 15px;
+          padding: 10px;
           border: 3px solid silver;
+        }
+
+        .projects .apple-android-logo {
+          width: auto;
+          height: 70px;
+          bottom: 10%;
+          right: 30%;
+          
         }
 
         .project-content h1 {
@@ -197,14 +218,11 @@
             background-color: #556677;
         }
 
-        .latest-projects {
-            padding: 4rem 0;
-        }
-
         .section-title {
             text-align: center;
             font-size: 2rem;
-            margin-bottom: 3rem;
+            margin-top: 3rem;
+            margin-bottom: 5rem;
             text-transform: uppercase;
             letter-spacing: 2px;
         }
@@ -263,7 +281,6 @@
 
     <div class="featured-wrapper">
         <section class="featured">
-            <!-- <div class="featured-label">Featured</div> -->
             <div class="project-container">
                 <div class="project-images">
                     <img src="./images/bwk/1.png" alt="BWK App Screenshot 1" class="project-image image-1">
@@ -280,12 +297,46 @@
         </section>
     </div>
 
-    <section class="latest-projects">
-        <div class="container">
-            <h2 class="section-title">Latest Projects</h2>
-            <!-- Project cards will go here -->
-        </div>
-    </section>
+
+    <div>
+      <section class="projects">
+          <div class="container">
+              <h2 class="section-title">Latest Projects</h2>
+              
+              <div class="project-container">
+                  <div class="project-images">
+                      <img src="./images/bwk/1.png" alt="BWK App Screenshot 1" class="project-image image-1">
+                      <img src="./images/bwk/2.png" alt="BWK App Screenshot 2" class="project-image image-2">
+                      <img src="./images/logos/apple-android.png" alt="Apple, Android logos" class="apple-android-logo">
+                  </div>
+                  <div class="project-content">
+                      <h1>BWK Breathwork App</h1>
+                      <p>Heart-centered professionally guided breathwork sessions to calm, clear, and energize. Easy to follow breaths with intuitively chosen music.</p>
+                      <a href="#" class="view-project-btn">VIEW PROJECT DETAILS</a>
+                  </div>
+              </div>
+
+              <div class="project-container">
+                <div class="project-images">
+                    <img src="./images/bwk/1.png" alt="BWK App Screenshot 1" class="project-image image-1">
+                    <img src="./images/bwk/2.png" alt="BWK App Screenshot 2" class="project-image image-2">
+                    <img src="./images/logos/apple-android.png" alt="Apple, Android logos" class="apple-android-logo">
+                </div>
+                <div class="project-content">
+                    <h1>BWK Breathwork App</h1>
+                    <p>Heart-centered professionally guided breathwork sessions to calm, clear, and energize. Easy to follow breaths with intuitively chosen music.</p>
+                    <a href="#" class="view-project-btn">VIEW PROJECT DETAILS</a>
+                </div>
+            </div>
+
+          </div>
+      </section>
+
+    </div>
+
+
+
+    
 
     <script>
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
