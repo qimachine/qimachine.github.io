@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Qi Machine</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -83,10 +86,12 @@
             padding: 4rem 2rem;
         }
 
-        .featured-label {
+        .project-content .featured-label {
             color: #445566;
+            font-size: 0.85rem;
+            font-weight: 600;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 2px;
             margin-bottom: 1rem;
         }
 
@@ -157,7 +162,7 @@
           bottom: 5%;
           right: 20%;
           z-index: 4;
-          background: rgb(150, 150, 150);
+          background: rgba(150, 150, 150, 0.96);
           border-radius: 20px;
           padding: 15px;
           border: 3px solid silver;
@@ -166,6 +171,7 @@
         .project-content h1 {
             font-size: 3rem;
             margin-bottom: 1.5rem;
+            font-family: "PT Serif", serif;
             font-weight: bold;
         }
 
@@ -209,17 +215,18 @@
             .navbar-content {
                 flex-direction: column;
                 padding: 1rem;
+                position: relative;
             }
 
             .nav-links {
-                /* flex-direction: column;
+                flex-direction: column;
                 gap: 1rem;
                 text-align: center;
                 width: 100%;
-                margin-top: 1rem; */
-
+                
+                position: relative;
                 margin-left: 0;
-                margin-top: 1rem;
+                margin-top: 3rem;
                 justify-content: center;
             }
 
@@ -231,6 +238,10 @@
             .project-content h1 {
                 font-size: 2rem;
             }
+
+            body {
+                padding-top: 290px; /* Height of navbar + padding */
+            }
         }
     </style>
 </head>
@@ -240,6 +251,7 @@
           <img src="./images/logo_v0.png" alt="Qi Machine" class="logo">
           <div class="nav-links">
               <a href="#projects">Projects</a>
+              <a href="#about">About</a>
               <a href="#want-an-app">Want an App?</a>
               <a href="#contact">Contact</a>
           </div>
@@ -248,16 +260,15 @@
 
     <div class="featured-wrapper">
         <section class="featured">
-            <div class="featured-label">Featured</div>
+            <!-- <div class="featured-label">Featured</div> -->
             <div class="project-container">
                 <div class="project-images">
                     <img src="./images/bwk/1.png" alt="BWK App Screenshot 1" class="project-image image-1">
                     <img src="./images/bwk/2.png" alt="BWK App Screenshot 2" class="project-image image-2">
                     <img src="./images/logos/apple-android.png" alt="Apple, Android logos" class="apple-android-logo">
-                    <!-- <img src="./images/apple/apple-logo.png" alt="Apple Logo" class="apple-logo">
-                    <img src="./images/android/android-logo.png" alt="Android Logo" class="android-logo"> -->
                 </div>
                 <div class="project-content">
+                    <p class="featured-label">Featured</p>
                     <h1>BWK Breathwork App</h1>
                     <p>Heart-centered professionally guided breathwork sessions to calm, clear, and energize. Easy to follow breaths with intuitively chosen music.</p>
                     <a href="#" class="view-project-btn">VIEW PROJECT DETAILS</a>
