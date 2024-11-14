@@ -75,9 +75,11 @@
             padding: 80px 0 2rem;
         }
 
-        .featured-wrapper {
+        .featured-wrapper, .about-wrapper {
             background-color: rgb(245, 244, 241);
         }
+
+        
 
         .featured {
             max-width: 1400px;
@@ -227,6 +229,28 @@
             letter-spacing: 2px;
         }
 
+        .footer-wrapper {
+          background-color: #445566;
+        }
+
+        .footer {
+          padding: 2rem 0;
+          text-align: center;
+        }
+
+        .footer-text {
+          color: white;
+          margin: 0 auto;
+          font-size: 1rem;
+        }
+
+        .footer .container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-height: 60px;
+        }
+
         /* Mobile responsiveness */
         @media (max-width: 768px) {
             .navbar {
@@ -331,11 +355,40 @@
 
           </div>
       </section>
-
     </div>
 
+    <div class="about-wrapper">
+      <section class="about">
+        <div class="container">
+          <h2 class="section-title">About</h2>
+  
+          <div class="about-body">
+            <p>About body</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    
 
+    <section class="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
 
+        <div class="contact-body">
+          <p>Contact body</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer-wrapper">
+      <section class="footer">
+        <div class="container">
+          <h4 class="footer-text">&copy; Qi Machine LLC 2024</h4>
+        </div>
+      </section>
+    </div>
+
+    
     
 
     <script>
