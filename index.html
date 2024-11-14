@@ -115,20 +115,20 @@
         .image-1 {
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -50%);
+            transform: translate(-40%, -50%);
             z-index: 3;
         }
 
         .image-2 {
             top: 45%;
-            left: 40%;
+            left: 30%;
             transform: translate(-50%, -50%);
             z-index: 2;
         }
 
         .apple-logo {
             width: 80px;
-            height: 80px;
+            height: auto;
             position: absolute;
             bottom: 20%;
             right: 20%;
@@ -136,6 +136,31 @@
             background: black;
             border-radius: 20px;
             padding: 15px;
+        }
+
+        .android-logo {
+          width: 80px;
+          height: auto;
+          position: absolute;
+          bottom: 5%;
+          right: 20%;
+          z-index: 4;
+          background: black;
+          border-radius: 20px;
+          padding: 15px;
+        }
+
+        .apple-android-logo {
+          width: auto;
+          height: 80px;
+          position: absolute;
+          bottom: 5%;
+          right: 20%;
+          z-index: 4;
+          background: rgb(150, 150, 150);
+          border-radius: 20px;
+          padding: 15px;
+          border: 3px solid silver;
         }
 
         .project-content h1 {
@@ -228,7 +253,9 @@
                 <div class="project-images">
                     <img src="./images/bwk/1.png" alt="BWK App Screenshot 1" class="project-image image-1">
                     <img src="./images/bwk/2.png" alt="BWK App Screenshot 2" class="project-image image-2">
-                    <img src="./images/apple/applelogo.png" alt="Apple Logo" class="apple-logo">
+                    <img src="./images/logos/apple-android.png" alt="Apple, Android logos" class="apple-android-logo">
+                    <!-- <img src="./images/apple/apple-logo.png" alt="Apple Logo" class="apple-logo">
+                    <img src="./images/android/android-logo.png" alt="Android Logo" class="android-logo"> -->
                 </div>
                 <div class="project-content">
                     <h1>BWK Breathwork App</h1>
