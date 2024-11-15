@@ -20,7 +20,8 @@
 
 .project-subtitle {
   font-size: 1.2rem;
-  color: #445566;
+  /* color: #445566; */
+  color: rgba(185, 70, 65);
   margin-bottom: 6rem;
 }
 
@@ -33,7 +34,8 @@
   font-size: 1.8rem;
   margin-top: 3rem;
   margin-bottom: 1.5rem;
-  color: #445566;
+  /* color: #445566; */
+  color: rgba(185, 70, 65);
 }
 
 .project-content ul {
@@ -49,14 +51,17 @@
 }
 
 .project-content a {
-  color: #445566;
+  /* color: #445566; */
+  color: rgba(185, 70, 65);
   text-decoration: none;
-  border-bottom: 1px solid #445566;
+  /* border-bottom: 1px solid #445566; */
+  border-bottom: 1px solid rgba(185, 70, 65);
   transition: color 0.3s ease;
 }
 
 .project-content a:hover {
-  color: #556677;
+  /* color: #556677; */
+  color: rgba(185, 70, 65, 0.8);
 }
 
 .app-store-links {
@@ -89,7 +94,8 @@
 .wordpress-button {
   display: inline-block;
   padding: 0.8rem 1.5rem;
-  background-color: #445566;
+  /* background-color: #445566; */
+  background-color: rgba(185, 70, 65);
   color: white !important;
   text-decoration: none;
   border-radius: 25px;
@@ -100,7 +106,8 @@
 }
 
 .wordpress-button:hover {
-  background-color: #556677;
+  /* background-color: #556677; */
+  background-color: rgba(185, 70, 65, 0.8);
   color: white;
 }
 
@@ -138,6 +145,6 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-}
+  }
 }
 

@@ -57,7 +57,8 @@ body {
 }
 
 .nav-links a {
-  color: rgb(74, 88, 128);
+  /* color: rgb(74, 88, 128); */
+  color: rgba(185, 70, 65);
   text-decoration: none;
   text-transform: uppercase;
   font-family: 'Roboto Condensed', sans-serif;
@@ -90,7 +91,8 @@ section {
 }
 
 .project-content .featured-label {
-  color: #445566;
+  /* color: #445566; */
+  color: rgba(185, 70, 65);
   font-size: 0.85rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -161,8 +163,8 @@ section {
 }
 
 .projects .project-image {
-width: 180px;
-height: auto;
+  width: 180px;
+  height: auto;
 }
 
 .image-1 {
@@ -179,51 +181,24 @@ height: auto;
   z-index: 2;
 }
 
-.apple-logo {
-  width: 80px;
-  height: auto;
+.apple-android-logo {
+  width: auto;
+  height: 80px;
   position: absolute;
-  bottom: 20%;
-  right: 20%;
+  bottom: 0%;
+  right: 15%;
   z-index: 4;
-  background: black;
+  background: rgba(150, 150, 150, 0.96);
   border-radius: 20px;
   padding: 10px;
   border: 3px solid silver;
 }
 
-.android-logo {
-width: 80px;
-height: auto;
-position: absolute;
-bottom: 5%;
-right: 20%;
-z-index: 4;
-background: black;
-border-radius: 20px;
-padding: 10px;
-border: 3px solid silver;
-}
-
-.apple-android-logo {
-width: auto;
-height: 80px;
-position: absolute;
-bottom: 0%;
-right: 15%;
-z-index: 4;
-background: rgba(150, 150, 150, 0.96);
-border-radius: 20px;
-padding: 10px;
-border: 3px solid silver;
-}
-
 .projects .apple-android-logo {
-width: auto;
-height: 70px;
-bottom: 10%;
-right: 30%;
-
+  width: auto;
+  height: 70px;
+  bottom: 10%;
+  right: 30%;
 }
 
 .project-content h1 {
@@ -243,7 +218,8 @@ right: 30%;
 .view-project-btn {
   display: inline-block;
   padding: 0.8rem 1.5rem;
-  background-color: #445566;
+  /* background-color: #445566; */
+  background-color: rgba(185, 70, 65);
   color: white;
   text-decoration: none;
   border-radius: 25px;
@@ -253,7 +229,8 @@ right: 30%;
 }
 
 .view-project-btn:hover {
-  background-color: #556677;
+  /* background-color: #556677; */
+  background-color: rgba(185, 70, 65, 0.8);
 }
 
 .section-title {
@@ -306,30 +283,27 @@ right: 30%;
   margin-bottom: 1rem;
 }
 
-.want-an-app-cta:hover {
-  background-color: #556677;
-}
-
 .footer-wrapper {
-background-color: #445566;
+  /* background-color: #445566; */
+  background-color: rgba(185, 70, 65);
 }
 
 .footer {
-padding: 2rem 0;
-text-align: center;
+  padding: 2rem 0;
+  text-align: center;
 }
 
 .footer-text {
-color: white;
-margin: 0 auto;
-font-size: 1rem;
+  color: white;
+  margin: 0 auto;
+  font-size: 1rem;
 }
 
 .footer .container {
-display: flex;
-justify-content: center;
-align-items: center;
-min-height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60px;
 }
 
 .contact-body {
@@ -348,16 +322,19 @@ min-height: 60px;
 .contact-email {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 1.5rem;
-  color: #445566;
+  /* color: #445566; */
+  color: rgba(185, 70, 65);
   text-decoration: none;
   font-weight: 700;
   transition: color 0.3s ease;
-  border-bottom: 2px solid #445566;
+  /* border-bottom: 2px solid #445566; */
+  border-bottom: 2px solid rgba(185, 70, 65);
   padding-bottom: 0.25rem;
 }
 
 .contact-email:hover {
-  color: #556677;
+  /* color: #556677; */
+  color: rgba(185, 70, 65, 0.8);
 }
 
 /* Mobile responsiveness */
