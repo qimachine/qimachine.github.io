@@ -1,0 +1,121 @@
+/* Project Detail Page Styles */
+.project-detail {
+  max-width: 800px;
+  margin: 0rem auto;
+  padding: 0 2rem 4rem;
+}
+
+.project-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.project-title {
+  font-family: "PT Serif", serif;
+  font-size: 3rem;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.project-subtitle {
+  font-size: 1.2rem;
+  color: #445566;
+  margin-bottom: 6rem;
+}
+
+.project-content {
+  margin-top: 6rem;
+}
+
+.project-content h2 {
+  font-family: "PT Serif", serif;
+  font-size: 1.8rem;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  color: #445566;
+}
+
+.project-content ul {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 2rem;
+  margin-left: 1.5rem;
+}
+
+.project-content ul li {
+  margin-bottom: 0.5rem;
+}
+
+.project-content a {
+  color: #445566;
+  text-decoration: none;
+  border-bottom: 1px solid #445566;
+  transition: color 0.3s ease;
+}
+
+.project-content a:hover {
+  color: #556677;
+}
+
+.app-store-links {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.app-store-links a {
+  border-bottom: none;  /* Override the underline */
+  display: inline-block;  /* Better handling of the image */
+}
+
+.app-store-badge {
+  height: 66px;
+  width: auto;
+  transition: opacity 0.3s ease;
+}
+
+.app-store-badge:hover {
+  opacity: 0.8;
+}
+
+
+@media (max-width: 768px) {
+  .project-title {
+      font-size: 2rem;
+  }
+
+  .project-images {
+      height: 400px;
+      margin-bottom: 2rem;
+  }
+
+  .project-image {
+    width: 180px;  /* Make images smaller on mobile */
+}
+
+  .apple-android-logo {
+      height: 60px;  /* Make logo smaller on mobile */
+      bottom: 5%;  /* Adjust position */
+  }
+
+  /* Adjust padding to prevent overlap with navbar */
+  .project-detail {
+      padding-top: 2rem;
+  }
+
+  /* Ensure header has enough space */
+  .project-header {
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+  }
+
+  .app-store-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+}
+
