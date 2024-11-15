@@ -3,295 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Qi Machine</title>
+    <title>Qi Machine - Software Development Services</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: white;
-            padding-top: 92px; /* Height of navbar + padding */
-        }
-
-        .container {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-
-        .navbar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            background-color: white;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            z-index: 1000;
-            height: 92px;
-            display: flex;
-            justify-content: center;
-        }
-
-        .navbar-content {
-            width: 1400px;
-            padding: 0 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            height: 60px;
-            width: auto;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-        }
-
-        .nav-links a {
-            color: rgb(74, 88, 128);
-            text-decoration: none;
-            text-transform: uppercase;
-            font-family: 'Roboto Condensed', sans-serif;
-            font-weight: 700;
-            transition: color 0.3s ease;
-        }
-
-        .nav-links a:hover {
-            opacity: 0.8;
-        }
-
-        section {
-            padding: 80px 0 2rem;
-        }
-
-        .featured-wrapper, .about-wrapper, .contact-wrapper {
-            background-color: rgb(245, 244, 241);
-        }
-
-        .featured {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 4rem 2rem;
-        }
-
-        .latest-projects {
-          max-width: 1400px;
-          margin: 0 auto;
-          padding: 4rem 2rem;
-        }
-
-        .project-content .featured-label {
-            color: #445566;
-            font-size: 0.85rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 1rem;
-        }
-
-        .project-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            align-items: center;
-        }
-
-        .project-images {
-            position: relative;
-            display: flex;
-            justify-content: center;
-            height: 600px; /* Adjust based on your needs */
-        }
-
-        .project-image {
-            position: absolute;
-            width: 280px; /* Adjust based on your needs */
-            height: auto;
-            border-radius: 20px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-
-        .projects .project-image {
-          width: 180px;
-          height: auto;
-        }
-
-        .image-1 {
-            top: 50%;
-            left: 50%;
-            transform: translate(-40%, -48%);
-            z-index: 3;
-        }
-
-        .image-2 {
-            top: 48%;
-            left: 30%;
-            transform: translate(-50%, -50%);
-            z-index: 2;
-        }
-
-        .apple-logo {
-            width: 80px;
-            height: auto;
-            position: absolute;
-            bottom: 20%;
-            right: 20%;
-            z-index: 4;
-            background: black;
-            border-radius: 20px;
-            padding: 10px;
-            border: 3px solid silver;
-        }
-
-        .android-logo {
-          width: 80px;
-          height: auto;
-          position: absolute;
-          bottom: 5%;
-          right: 20%;
-          z-index: 4;
-          background: black;
-          border-radius: 20px;
-          padding: 10px;
-          border: 3px solid silver;
-        }
-
-        .apple-android-logo {
-          width: auto;
-          height: 80px;
-          position: absolute;
-          bottom: 0%;
-          right: 15%;
-          z-index: 4;
-          background: rgba(150, 150, 150, 0.96);
-          border-radius: 20px;
-          padding: 10px;
-          border: 3px solid silver;
-        }
-
-        .projects .apple-android-logo {
-          width: auto;
-          height: 70px;
-          bottom: 10%;
-          right: 30%;
-          
-        }
-
-        .project-content h1 {
-            font-size: 3rem;
-            margin-bottom: 1.5rem;
-            font-family: "PT Serif", serif;
-            font-weight: bold;
-        }
-
-        .project-content p {
-            font-size: 1.2rem;
-            line-height: 1.6;
-            color: #333;
-            margin-bottom: 2rem;
-        }
-
-        .view-project-btn {
-            display: inline-block;
-            padding: 0.8rem 1.5rem;
-            background-color: #445566;
-            color: white;
-            text-decoration: none;
-            border-radius: 25px;
-            font-family: 'Roboto Condensed', sans-serif;
-            font-weight: 700;
-            transition: background-color 0.3s ease;
-        }
-
-        .view-project-btn:hover {
-            background-color: #556677;
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 2rem;
-            margin-top: 3rem;
-            margin-bottom: 5rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-
-        .footer-wrapper {
-          background-color: #445566;
-        }
-
-        .footer {
-          padding: 2rem 0;
-          text-align: center;
-        }
-
-        .footer-text {
-          color: white;
-          margin: 0 auto;
-          font-size: 1rem;
-        }
-
-        .footer .container {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          min-height: 60px;
-        }
-
-        /* Mobile responsiveness */
-        @media (max-width: 768px) {
-            .navbar {
-              position: absolute;
-              height: auto;
-            }
-
-            .navbar-content {
-                flex-direction: column;
-                padding: 1rem;
-                position: relative;
-            }
-
-            .nav-links {
-                flex-direction: column;
-                gap: 1rem;
-                text-align: center;
-                width: 100%;
-                margin-left: 0;
-                margin-top: 3rem;
-                justify-content: center;
-                padding-bottom: 1rem;
-            }
-
-            .project-container {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
-
-            .project-content h1 {
-                font-size: 2rem;
-            }
-
-            body {
-                padding-top: 282px; /* Height of navbar + padding */
-            }
-        }
-    </style>
+    <script src="script.js"></script>
 </head>
-<body>
+<body id="top">
     <nav class="navbar">
       <div class="navbar-content">
-          <img src="./images/logo_v0.png" alt="Qi Machine" class="logo">
+        <a href="#top" class="logo-link">
+            <img src="./images/logo_v0.png" alt="Qi Machine" class="logo">
+        </a>
           <div class="nav-links">
               <a href="#projects">Projects</a>
               <a href="#about">About</a>
@@ -373,7 +98,15 @@
         <h2 class="section-title">Want an App?</h2>
 
         <div class="want-an-app-body">
-          <p>Want an app body</p>
+          <div class="want-an-app-text">
+              <p>Have a great idea for an app but not sure where to start? Whether you're a business looking to expand your digital presence, an entrepreneur with an innovative concept, or an established company seeking to modernize your offerings, I can help bring your vision to life.</p>
+              
+              <p>The process starts with a free consultation call where we'll discuss your idea in detail. I'll help you understand the mobile app development landscape, explore technical possibilities, and provide a clear project timeline and cost estimate. With over a decade of experience in software development, I can guide you through the key decisions that will shape your app's success.</p>
+              
+              <p>I offer flexible engagement models. While traditional development services are available, I also consider partnership opportunities where I can build your app with zero upfront cost in exchange for shared future revenue. This arrangement aligns our interests and demonstrates my commitment to creating truly successful applications.</p>
+              
+              <p>Ready to transform your app idea into reality? Send me an email at the link below and let's talk about your vision.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -385,8 +118,9 @@
           <h2 class="section-title">Contact</h2>
 
           <div class="contact-body">
-            <p>Contact body</p>
-          </div>
+            <p class="contact-text">Ready to discuss your project? Get in touch:</p>
+            <a href="mailto:info@qimachine.com" class="contact-email">info@qimachine.com</a>
+        </div>
         </div>
       </section>
     </div>
@@ -398,19 +132,5 @@
         </div>
       </section>
     </div>
-
-    
-    
-
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
 </body>
 </html>
