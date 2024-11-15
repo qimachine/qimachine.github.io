@@ -80,13 +80,13 @@ section {
 .featured {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 4rem 2rem;
+  padding: 8rem 2rem;
 }
 
-.latest-projects {
-max-width: 1400px;
-margin: 0 auto;
-padding: 4rem 2rem;
+.projects {
+  max-width: 1400px;
+  margin: 0 auto 4rem;
+  padding: 4rem 2rem;
 }
 
 .project-content .featured-label {
@@ -136,7 +136,29 @@ padding: 4rem 2rem;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
+.project-image-piquet-pro-1 {
+  position: absolute;
+  width: 400px; /* Adjust based on your needs */
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  top: 47%;
+  left: 40%;
+  transform: translate(-40%, -48%);
+  z-index: 3;
+}
 
+.project-image-piquet-pro-2 {
+  position: absolute;
+  width: 400px; /* Adjust based on your needs */
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  top: 20%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
 
 .projects .project-image {
 width: 180px;
