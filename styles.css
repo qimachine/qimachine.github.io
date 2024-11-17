@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+}
+
 body {
   font-family: 'Arial', sans-serif;
   background-color: white;
@@ -168,7 +174,7 @@ section {
   height: auto;
   border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  top: 50%;
+  top: 56%;
   left: 50%;
   transform: translate(-40%, -48%);
   z-index: 3;
@@ -180,7 +186,7 @@ section {
   height: auto;
   border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  top: 30%;
+  top: 36%;
   left: 30%;
   transform: translate(-50%, -50%);
   z-index: 2;
