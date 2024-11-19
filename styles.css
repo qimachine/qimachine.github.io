@@ -366,6 +366,53 @@ section {
   color: rgba(185, 70, 65, 0.8);
 }
 
+.project-badges {
+  display: flex;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.badge {
+  padding: 0.4rem 0.8rem;
+  border-radius: 16px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* Badge colors */
+.badge-wellness {
+  background-color: #9FD8CB;
+  color: #2C5F55;
+}
+
+.badge-ai {
+  background-color: #FFD6A5;
+  color: #A65D03;
+}
+
+.badge-mobile {
+  background-color: #FFB7B7;
+  color: #912626;
+}
+
+.badge-web {
+  background-color: #B7C9FF;
+  color: #1A337E;
+}
+
+.badge-game {
+  background-color: #D5B7FF;
+  color: #4B1B89;
+}
+
+.badge-accessibility {
+  background-color: #B7FFB9;
+  color: #145516;
+}
+
 /* Mobile responsiveness */
 @media (max-width: 768px) {
   .navbar {
