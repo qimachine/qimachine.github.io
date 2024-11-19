@@ -80,7 +80,7 @@ section {
   padding: 80px 0 2rem;
 }
 
-.featured-wrapper, .about-wrapper, .contact-wrapper {
+.featured-wrapper, .want-an-app-wrapper {
   background-color: rgb(245, 244, 241);
 }
 
@@ -271,10 +271,14 @@ section {
   letter-spacing: 2px;
 }
 
+.about-section-title {
+  margin-top: 0rem;
+}
+
 .about-body {
   text-align: center;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 0 auto 2rem;
   padding: 0 0 2rem;
 }
 
@@ -348,6 +352,21 @@ section {
   color: #333;
 }
 
+.contact-phone {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.5rem;
+  color: rgba(185, 70, 65);
+  text-decoration: none;
+  font-weight: 700;
+  transition: color 0.3s ease;
+  line-height: 1;
+  margin-top: 2rem;
+}
+
+.contact-phone:hover {
+  color: rgba(185, 70, 65, 0.8);
+}
+
 .contact-email {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 1.5rem;
@@ -355,9 +374,10 @@ section {
   color: rgba(185, 70, 65);
   text-decoration: none;
   font-weight: 700;
+  line-height: 4;
   transition: color 0.3s ease;
   /* border-bottom: 2px solid #445566; */
-  border-bottom: 2px solid rgba(185, 70, 65);
+  /* border-bottom: 2px solid rgba(185, 70, 65); */
   padding-bottom: 0.25rem;
 }
 
