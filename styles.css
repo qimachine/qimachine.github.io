@@ -531,6 +531,35 @@ section {
       padding-bottom: 1rem;
   }
 
+
+  .intro {
+    padding: 6rem 0 0;
+    margin-bottom: 0;
+  }
+
+  .intro-text {
+    font-size: 1.25rem;
+  }
+
+  .hero-container {
+    background: url('./images/qimachine-ai-consultant.jpeg') no-repeat left bottom;
+    border-radius: 0px;
+    height: 500px;
+  }
+
+  .hero-content {
+    top: 15%;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+
   .project-container {
       grid-template-columns: 1fr;
       gap: 2rem;

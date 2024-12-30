@@ -1,0 +1,83 @@
+.ai-banner {
+  max-width: 1400px;
+  margin: 6rem auto 4rem;
+  padding: 0 2rem;
+}
+
+.ai-banner-content {
+  position: relative;
+  height: 180px;
+  background: url('../images/ai-divider.jpg') no-repeat center center;
+  background-size: cover;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.ai-banner-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.banner-text {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 900px;
+  padding: 0 2rem;
+}
+
+.ai-banner-content h1 {
+  position: relative;
+  color: white;
+  font-family: "PT Serif", serif;
+  font-size: 2.1rem;
+  font-weight: bold;
+  margin: 0 0 1rem 0;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.cta-section {
+  margin: -2rem auto 4rem;
+  text-align: center;
+}
+
+.cta-text {
+  font-family: "PT Serif", serif;
+  font-size: 1.2rem;
+  color: rgba(185, 70, 65);
+  line-height: 1.4;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.cta-text a {
+  color: rgba(185, 70, 65);
+  text-decoration: underline;
+  transition: opacity 0.3s ease;
+}
+
+.cta-text a:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .ai-banner-content {
+    height: 240px;
+  }
+  .ai-banner-content h1 {
+      font-size: 1.6rem;
+  }
+  .cta-text {
+    font-size: 1rem;
+    padding: 0 2rem;
+  }
+}
