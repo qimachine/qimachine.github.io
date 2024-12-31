@@ -69,6 +69,123 @@
   opacity: 0.8;
 }
 
+.overview {
+  padding: 2rem 0 4rem;
+}
+
+.overview-content {
+  max-width: 1000px;
+  margin: 0 auto 4rem;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: left;
+  color: #333;
+}
+
+/* Use Cases Section */
+.use-cases {
+  padding: 4rem 0;
+  background-color: rgb(30, 36, 42);
+  background-color: rgb(245, 244, 241);
+}
+
+.use-cases h2 {
+  font-family: "PT Serif", serif;
+  font-size: 1.8rem;
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+  color: rgba(185, 70, 65);
+  text-align: center;
+}
+
+.use-cases-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 6rem 0;
+  padding: 0 2rem;
+}
+
+.icon-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.card-icon {
+  width: 48px;
+  height: 48px;
+  color: rgba(185, 70, 65, 0.9);
+}
+
+.use-case-card {
+  background: white;
+  padding: 2.5rem 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.use-case-card h3 {
+  color: rgba(185, 70, 65);
+  font-family: "PT Serif", serif;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.use-case-card p {
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Case Study Section */
+.case-study {
+  padding: 4rem 0;
+}
+
+.case-study h2 {
+  font-family: "PT Serif", serif;
+  font-size: 1.8rem;
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+  color: rgba(185, 70, 65);
+  text-align: center;
+}
+
+.case-study-content {
+  max-width: 800px;
+  margin: 2rem auto 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.case-study-content p {
+  margin-bottom: 1.5rem;
+}
+
+/* Final CTA Section */
+.final-cta {
+  text-align: center;
+  padding: 6rem 0;
+  background-color: rgb(245, 244, 241);
+}
+
+.final-cta h2 {
+  font-family: "PT Serif", serif;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.final-cta p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
 @media (max-width: 768px) {
   .ai-banner-content {
     height: 240px;
@@ -79,5 +196,13 @@
   .cta-text {
     font-size: 1rem;
     padding: 0 2rem;
+  }
+
+  .use-cases-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .final-cta h2 {
+      font-size: 2rem;
   }
 }
