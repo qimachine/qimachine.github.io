@@ -568,10 +568,6 @@ section {
   color: #145516;
 }
 
-
-
-
-
 .carousel-wrapper {
   background-color: rgb(245, 244, 241);
 }
@@ -592,12 +588,14 @@ section {
 .carousel-slide {
   min-width: 1200px;
   padding: 0 200px;
+  box-sizing: border-box;
 }
 
 .carousel-container {
   display: flex;
   transform: translateX(0);
   transition: transform 0.5s ease-in-out;
+  width: 100%;
 }
 
 .carousel-slide.active {
@@ -735,21 +733,54 @@ section {
       padding-top: 282px; /* Height of navbar + padding */
   }
 
-  .carousel {
-    padding: 4rem 0;
+
+  .carousel-slide {
+    min-width: calc(100vw - 80px); /* Full viewport width minus padding */
+    padding: 0 20px;
+  }
+
+  .carousel .project-container {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+  }
+
+  .carousel .project-images {
+      height: 400px; /* Reduce height on mobile */
+  }
+
+  .carousel .project-image {
+      width: 200px; /* Smaller images on mobile */
   }
 
   .carousel-content-wrapper {
-      padding: 0 40px;
+      padding: 0 40px; /* Reduce padding on mobile */
   }
 
-  .carousel-slide {
-      min-width: 100%;
+  /* Adjust image positioning for mobile */
+  .carousel .image-1 {
+      top: 50%;
+      left: 50%;
+      transform: translate(-40%, -48%);
   }
 
-  .carousel-button {
-      width: 30px;
-      height: 30px;
-      font-size: 1rem;
+  .carousel .image-2 {
+      top: 48%;
+      left: 30%;
+      transform: translate(-50%, -50%);
+  }
+
+  .carousel .apple-android-logo {
+      height: 60px; /* Smaller logo on mobile */
+      bottom: 5%;
+      right: 10%;
+  }
+
+  .project-content h1 {
+      font-size: 2rem; /* Smaller heading on mobile */
+      margin-bottom: 1rem;
+  }
+
+  .carousel {
+      padding: 4rem 0; /* Less padding on mobile */
   }
 }
