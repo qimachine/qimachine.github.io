@@ -157,7 +157,6 @@ body {
 }
 
 .nav-links a {
-  /* color: rgb(74, 88, 128); */
   color: rgba(185, 70, 65);
   text-decoration: none;
   text-transform: uppercase;
@@ -419,6 +418,18 @@ section {
 
 .about-text p:last-child {
   margin-bottom: 0;
+}
+
+.about-text a {
+  color: rgba(185, 70, 65);
+}
+
+.about-text a:visited {
+  color: rgba(185, 70, 65);
+}
+
+.about-text a:hover {
+  color: rgba(185, 70, 65, 0.8);
 }
 
 .want-an-app-body {
