@@ -64,7 +64,6 @@ body {
   position: absolute;
   left: 5%;
   top: 25%;
-  /* transform: translateY(-50%); */
   max-width: 500px;
   color: white;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
@@ -79,14 +78,14 @@ body {
   text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 
-.ai-hero-content, .software-hero-content h1 {
+.ai-hero-content h1, .software-hero-content h1 {
   font-family: "PT Serif", serif;
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
   color: #FFD6A5;
 }
 
-.ai-hero-content, .software-hero-content p {
+.ai-hero-content p, .software-hero-content p {
   font-size: 1.2rem;
   line-height: 1.5;
   margin-bottom: 2rem;
@@ -562,24 +561,34 @@ section {
     font-size: 1.25rem;
   }
 
-  .hero-container {
+  .ai-hero-container {
     background: url('./images/qimachine-ai-consultant.jpeg') no-repeat left bottom;
     border-radius: 0px;
     height: 500px;
   }
 
-  .hero-content {
+  .software-hero-container {
+    background: url('./images/qimachine-software-development.jpeg') no-repeat left bottom;
+    border-radius: 0px;
+    height: 500px;
+  }
+
+  .ai-hero-content {
     top: 15%;
   }
 
-  .hero-content h1 {
+  .software-hero-content {
+    left: 5%;
+    top: 37%;
+  }
+
+  .ai-hero-content h1, .software-hero-content h1 {
     font-size: 2rem;
   }
 
-  .hero-content p {
+  .ai-hero-content p, .software-hero-content p {
     font-size: 1rem;
   }
-
 
   .project-container {
       grid-template-columns: 1fr;
