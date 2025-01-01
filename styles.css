@@ -174,6 +174,36 @@ section {
   padding: 80px 0 2rem;
 }
 
+.section-divider {
+  max-width: 1400px;
+  margin: 6rem auto 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.divider-line {
+  height: 1px;
+  width: 100px;
+  background-color: rgba(185, 70, 65, 0.3);
+}
+
+.divider-icon {
+  color: rgba(185, 70, 65, 0.6);
+  font-size: 1.5rem;
+  line-height: 0; /* This ensures vertical centering */
+  display: flex; /* These three lines ensure perfect centering */
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 3px;
+}
+
+.portfolio-intro {
+  padding: 6rem 0 0;
+  margin-bottom: 0;
+}
+
 .featured-wrapper, .want-an-app-wrapper {
   background-color: rgb(245, 244, 241);
 }
