@@ -588,6 +588,7 @@ section {
 .carousel-slide {
   min-width: 1200px;
   padding: 0 200px;
+  margin: 2rem 0;
   box-sizing: border-box;
 }
 
