@@ -13,7 +13,7 @@ html, body {
 body {
   font-family: 'Arial', sans-serif;
   background-color: white;
-  padding-top: 92px; /* Height of navbar + padding */
+  padding-top: 92px;
 }
 
 .intro {
