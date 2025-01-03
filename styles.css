@@ -160,6 +160,24 @@ body {
   background-color: rgba(185, 70, 65, 1);
 }
 
+.ai-cta {
+  display: inline-block;
+  margin-top: 3rem;
+  padding: 1rem 2rem;
+  background-color: rgba(185, 70, 65, 0.9);
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.ai-cta:hover {
+  background-color: rgba(185, 70, 65, 1);
+}
+
 .container {
   max-width: 1400px;
   margin: 0 auto;
