@@ -414,10 +414,10 @@ section {
 .about-section-title {
   text-align: center;
   font-size: 2rem;
-  margin-top: 0rem;
-  margin-bottom: 5rem;
+  margin: 0rem auto 5rem;
   text-transform: uppercase;
   letter-spacing: 2px;
+  max-width: 800px;
 }
 
 .about-body {
