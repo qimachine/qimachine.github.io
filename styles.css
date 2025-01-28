@@ -202,7 +202,7 @@ section {
 
 .portfolio-intro {
   padding: 6rem 0 0;
-  margin-bottom: 0;
+  margin-bottom: 6rem;
 }
 
 .featured-wrapper, .want-an-app-wrapper {
@@ -931,34 +931,13 @@ section {
 
   }
 
-  .ai-hero-container {
-    background: url('./images/qimachine-ai-consultant.jpeg') no-repeat left bottom;
-    border-radius: 0px;
-    height: 500px;
-  }
+  
 
-  .software-hero-container {
-    background: url('./images/qimachine-software-development.jpeg') no-repeat left bottom;
-    border-radius: 0px;
-    height: 500px;
-  }
+  
 
-  .ai-hero-content {
-    top: 15%;
-  }
+  
 
-  .software-hero-content {
-    left: 5%;
-    top: 37%;
-  }
-
-  .ai-hero-content h1, .software-hero-content h1 {
-    font-size: 2rem;
-  }
-
-  .ai-hero-content p, .software-hero-content p {
-    font-size: 1rem;
-  }
+  
 
   .project-container {
       grid-template-columns: 1fr;
