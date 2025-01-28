@@ -1,0 +1,17 @@
+.qi-gong-flyer-container {
+  text-align: center;
+  margin-top: -3rem;
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.qi-gong-flyer {
+  width: auto;
+  height: 69vh;
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
