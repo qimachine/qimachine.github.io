@@ -779,6 +779,67 @@ section {
   background-color: rgba(185, 70, 65, 0.1);
 }
 
+
+/* Qigong addition below */
+
+.hero-grid {
+  max-width: 1400px;
+  margin: 6rem auto 4rem;
+  padding: 0 2rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.hero-card {
+  flex: 1;
+  background: rgb(245, 244, 241);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: calc((1400px - 4rem - 4rem) / 3); /* Account for container padding and gaps */
+}
+
+.hero-image {
+  width: 100%;
+  /* Golden ratio height based on width */
+  height: 0;
+  padding-bottom: 61.8%;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-content {
+  padding: 2rem;
+}
+
+.hero-content h1 {
+  font-family: "PT Serif", serif;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: rgba(185, 70, 65);
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.ai-image {
+  background-image: url('./images/qimachine-ai-consultant.jpeg');
+}
+
+.software-image {
+  background-image: url('./images/qimachine-software-development.jpeg');
+}
+
+.qigong-image {
+  background-image: url('/api/placeholder/700/400');
+}
+
+
+
 /* Mobile responsiveness */
 @media (max-width: 768px) {
   .navbar {
@@ -802,6 +863,29 @@ section {
       justify-content: center;
       padding-bottom: 1rem;
   }
+
+  .hero-grid {
+    flex-direction: column;
+    padding: 0 1rem;
+    
+  }
+
+  .hero-card {
+    width: 100%;
+  }
+
+  .hero-content {
+    padding: 1.5rem;
+  }
+
+  .hero-content h1 {
+    font-size: 1.75rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
 
   .intro {
     padding: 6rem 0 0;
