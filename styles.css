@@ -177,7 +177,7 @@ section {
 
 .section-divider {
   max-width: 1400px;
-  margin: 4rem auto 4rem;
+  margin: 8rem auto 8rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -201,8 +201,9 @@ section {
 }
 
 .portfolio-intro {
-  padding: 6rem 0 0;
-  margin-bottom: 6rem;
+  padding: 6rem 0 0rem;
+  /* margin-bottom: 6rem; */
+  background-color: rgb(245, 244, 241);
 }
 
 .featured-wrapper, .want-an-app-wrapper {
@@ -393,7 +394,7 @@ section {
   text-align: center;
   font-size: 2rem;
   padding-top: 3rem;
-  margin-bottom: 5rem;
+  padding-bottom: 5rem;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -655,7 +656,7 @@ section {
 .carousel {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 8rem 0 14rem;
+  padding: 0rem 0 14rem;
   position: relative;
   overflow: hidden;
 }
