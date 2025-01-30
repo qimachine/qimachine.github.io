@@ -666,18 +666,16 @@ section {
   overflow: hidden;
 }
 
+.carousel-container {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
 .carousel-slide {
-  min-width: 1200px;
+  flex: 0 0 1200px; /* Fixed width for desktop */
   padding: 0 200px;
   margin: 2rem 0;
   box-sizing: border-box;
-}
-
-.carousel-container {
-  display: flex;
-  transform: translateX(0);
-  transition: transform 0.5s ease-in-out;
-  width: 100%;
 }
 
 .carousel-slide.active {
@@ -934,11 +932,25 @@ section {
 
   
 
-  
+  .carousel-wrapper {
+    display: block; /* Override the previous none */
+  }
 
-  
+  .carousel {
+    padding: 0 0 8rem;
+  }
 
-  
+  .carousel-content-wrapper {
+    padding: 0; /* Remove side padding on mobile */
+    width: 100%; /* Full width */
+  }
+
+  .carousel-slide {
+    flex: 0 0 100vw; /* Use viewport width */
+    width: 100vw; /* Ensure full viewport width */
+    padding: 0 20px; /* Keep some padding for content only */
+    box-sizing: border-box;
+  }
 
   .project-container {
       grid-template-columns: 1fr;
@@ -947,6 +959,29 @@ section {
 
   .project-content h1 {
       font-size: 2rem;
+  }
+
+  .project-images {
+    height: 400px; /* Adjust based on your needs */
+  }
+
+  .project-image {
+    width: 220px; /* Smaller images for mobile */
+  }
+
+  .carousel-button {
+    width: 32px;
+    height: 32px;
+  }
+
+  .carousel-button.prev {
+    left: 5px;
+    z-index: 2;
+  }
+
+  .carousel-button.next {
+    right: 5px;
+    z-index: 2;
   }
 
   body {
@@ -978,8 +1013,4 @@ section {
   }
 }
 
-@media (max-width: 1400px) {
-  .carousel-wrapper {
-    display: none;
-  }
-}
+
