@@ -5,13 +5,29 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 1rem; /* Add padding for mobile */
 }
 
 .qi-gong-flyer {
-  width: auto;
-  height: 69vh;
   max-width: 100%;
+  height: auto; /* Let height scale naturally with width */
+  width: auto;
+  max-height: 69vh; /* Use max-height instead of fixed height */
   object-fit: contain;
   border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Add media query for mobile devices */
+@media screen and (max-width: 768px) {
+  .qi-gong-flyer-container {
+    margin-top: -2rem; /* Reduced top margin for mobile */
+    margin-bottom: 4rem; /* Reduced bottom margin for mobile */
+  }
+  
+  .qi-gong-flyer {
+    max-height: none; /* Remove max-height constraint on mobile */
+    width: 100%; /* Force full width */
+    height: auto; /* Let height scale proportionally */
+  }
 }
