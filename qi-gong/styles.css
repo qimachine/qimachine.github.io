@@ -44,6 +44,13 @@
   background-color: rgba(185, 70, 65, 1);
 }
 
+.banner h3 {
+  text-align: center;
+  color: rgba(185, 70, 65, 1);
+  margin-top: -2rem;
+  margin-bottom: 5rem;
+}
+
 /* Add media query for mobile devices */
 @media screen and (max-width: 768px) {
   .qi-gong-flyer-container {
