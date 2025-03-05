@@ -72,14 +72,20 @@
 }
 
 .app-store-links a {
-  border-bottom: none;  /* Override the underline */
-  display: inline-block;  /* Better handling of the image */
+  border-bottom: none;
+  display: inline-block;
+  align-content: center;
 }
 
 .app-store-badge {
   height: 66px;
   width: auto;
   transition: opacity 0.3s ease;
+  border-radius: 13px;
+}
+
+.play-store-badge {
+  height: 63px;
 }
 
 .app-store-badge:hover {
