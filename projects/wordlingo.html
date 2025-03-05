@@ -113,14 +113,30 @@
           </ul>
          
           <h2>Technical Details</h2>
-          <p>Built natively for iOS using SwiftUI, the app features:</p>
+          <p>Built natively for both iOS and Android platforms:</p>
           <ul>
-            <li>Core Architecture:
+            <li>iOS Development:
               <ul>
+                <li>SwiftUI framework for reactive user interface</li>
                 <li>MVVM (Model-View-ViewModel) design pattern</li>
-                <li>Reactive UI with SwiftUI framework</li>
                 <li>Core Data for persistent storage</li>
-                <li>Efficient state management</li>
+                <li>Efficient state management with Combine framework</li>
+              </ul>
+            </li>
+            <li>Android Development:
+              <ul>
+                <li>Kotlin as primary language</li>
+                <li>MVVM architecture with LiveData and ViewModel</li>
+                <li>Room database for local data persistence</li>
+                <li>Coroutines for asynchronous operations</li>
+              </ul>
+            </li>
+            <li>Shared Architecture Concepts:
+              <ul>
+                <li>Repository pattern for data operations</li>
+                <li>Clean Architecture principles</li>
+                <li>Dependency injection</li>
+                <li>Unit and UI testing across platforms</li>
               </ul>
             </li>
             <li>Data Management:
@@ -129,6 +145,7 @@
                 <li>Structured data models for game progress</li>
                 <li>Efficient language resource handling</li>
                 <li>CSV parsing for translation imports</li>
+                <li>Cross-platform sync capabilities</li>
               </ul>
             </li>
             <li>User Interface:
@@ -136,7 +153,8 @@
                 <li>Custom animations for game feedback</li>
                 <li>Responsive layout adaptable to different screen sizes</li>
                 <li>Accessible design with clear visual cues</li>
-                <li>Optimized for one-handed gameplay</li>
+                <li>Material Design principles on Android</li>
+                <li>Optimized for one-handed gameplay on both platforms</li>
               </ul>
             </li>
           </ul>
