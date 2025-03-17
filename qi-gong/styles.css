@@ -18,6 +18,24 @@
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
+.feedback-comments {
+  text-align: center;
+  margin-top: -2rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5rem;
+}
+
+.feedback-comments h3 {
+  margin-bottom: 2rem;
+}
+
+.feedback-comments p {
+  font-style: italic;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
 .event-link {
   text-align: center;
   margin: 3rem 0 0;
