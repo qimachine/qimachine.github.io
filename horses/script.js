@@ -212,7 +212,7 @@ function loadHorseImages() {
     // Add spacer div after all images
     const spacer = document.createElement('div');
     spacer.className = 'image-spacer';
-    spacer.style.height = '200px';
+    spacer.style.height = '160px';
     spacer.style.width = '100%';
     horseImagesContainer.appendChild(spacer);
 }
