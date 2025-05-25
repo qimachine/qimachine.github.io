@@ -48,7 +48,9 @@
     margin-top: 5px;
     text-transform: none;
     letter-spacing: normal;
-}/* Reset and base styles */
+}
+
+/* Reset and base styles */
 * {
     margin: 0;
     padding: 0;
@@ -170,6 +172,8 @@ body {
 #game-screen {
     position: relative;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Game Header */
@@ -225,11 +229,10 @@ body {
 /* Horse Images Container */
 .horse-images-container {
     flex: 1;
-    padding: 20px 20px 180px;
+    padding: 20px 20px 0;
     display: flex;
     justify-content: center;
     overflow-y: auto;
-    /* margin-bottom: 55px; */
 }
 
 #horse-images {
@@ -238,8 +241,7 @@ body {
     gap: 20px;
     max-width: 600px;
     width: 100%;
-    padding-bottom: 25px;
-    margin-bottom: 55px;
+    padding-bottom: 20px;
 }
 
 .horse-image {
@@ -260,7 +262,6 @@ body {
     padding: 20px;
     z-index: 200;
     box-shadow: 0 -5px 25px rgba(0, 0, 0, 0.15);
-    margin-top: 16px;
 }
 
 .answer-buttons {
@@ -410,13 +411,6 @@ body {
 
 /* Desktop responsiveness */
 @media (min-width: 768px) {
-    body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-    }
-    
     .screen {
         max-width: 600px;
         margin: 0 auto;
@@ -466,6 +460,6 @@ body {
     }
     
     .horse-images-container {
-        padding: 52px 15px 200px;
+        padding: 52px 15px 0;
     }
 }
