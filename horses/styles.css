@@ -1,55 +1,3 @@
-/* Mode Selection Buttons */
-.mode-buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 10px;
-}
-
-.btn-mode {
-    padding: 18px 30px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    border: 2px solid transparent;
-    border-radius: 12px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    position: relative;
-    overflow: hidden;
-}
-
-.btn-easy {
-    background: linear-gradient(135deg, rgb(171, 150, 101) 0%, rgb(156, 135, 86) 100%);
-    color: white;
-    box-shadow: 0 4px 15px rgba(171, 150, 101, 0.4);
-}
-
-.btn-hard {
-    background: linear-gradient(135deg, rgb(139, 118, 69) 0%, rgb(124, 103, 54) 100%);
-    color: white;
-    box-shadow: 0 4px 15px rgba(139, 118, 69, 0.4);
-}
-
-.btn-mode:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(171, 150, 101, 0.6);
-}
-
-.btn-mode:active {
-    transform: translateY(0);
-}
-
-.mode-description {
-    font-size: 0.9rem;
-    opacity: 0.9;
-    font-weight: 400;
-    margin-top: 5px;
-    text-transform: none;
-    letter-spacing: normal;
-}
-
 /* Reset and base styles */
 * {
     margin: 0;
@@ -70,6 +18,7 @@ body {
     display: none;
     min-height: 100vh;
     width: 100%;
+    position: relative;
 }
 
 .screen.active {
@@ -140,7 +89,59 @@ body {
     font-weight: bold;
 }
 
-/* Buttons */
+/* Mode Selection Buttons */
+.mode-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.btn-mode {
+    padding: 18px 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-easy {
+    background: linear-gradient(135deg, rgb(171, 150, 101) 0%, rgb(156, 135, 86) 100%);
+    color: white;
+    box-shadow: 0 4px 15px rgba(171, 150, 101, 0.4);
+}
+
+.btn-hard {
+    background: linear-gradient(135deg, rgb(139, 118, 69) 0%, rgb(124, 103, 54) 100%);
+    color: white;
+    box-shadow: 0 4px 15px rgba(139, 118, 69, 0.4);
+}
+
+.btn-mode:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(171, 150, 101, 0.6);
+}
+
+.btn-mode:active {
+    transform: translateY(0);
+}
+
+.mode-description {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    font-weight: 400;
+    margin-top: 5px;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+/* General Buttons */
 .btn {
     padding: 15px 30px;
     font-size: 1.1rem;
@@ -172,12 +173,16 @@ body {
 #game-screen {
     position: relative;
     height: 100vh;
-    display: flex;
+    display: none; /* Hidden by default */
     flex-direction: column;
 }
 
+#game-screen.active {
+    display: flex; /* Show when active */
+}
+
 /* Game Header */
-.game-header {
+#game-screen .game-header {
     position: fixed;
     top: 0;
     left: 0;
@@ -185,15 +190,11 @@ body {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
     padding: 15px 20px;
-    display: none !important; /* Hide by default with !important */
+    display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-#game-screen.active .game-header {
-    display: flex !important; /* Show only when game screen is active */
 }
 
 .score-display {
@@ -233,7 +234,7 @@ body {
 /* Horse Images Container */
 .horse-images-container {
     flex: 1;
-    padding: 20px 20px 0;
+    padding: 80px 20px 200px; /* Top padding for header, bottom padding for answer panel */
     display: flex;
     justify-content: center;
     overflow-y: auto;
@@ -245,7 +246,6 @@ body {
     gap: 20px;
     max-width: 600px;
     width: 100%;
-    padding-bottom: 20px;
 }
 
 .horse-image {
@@ -256,53 +256,51 @@ body {
 }
 
 /* Answer Panel */
-.answer-panel {
+#game-screen .answer-panel {
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(15px);
-    padding: 20px;
+    padding: 15px;
     z-index: 200;
     box-shadow: 0 -5px 25px rgba(0, 0, 0, 0.15);
-    display: none !important; /* Hide by default with !important */
-}
-
-#game-screen.active .answer-panel {
-    display: block !important; /* Show only when game screen is active */
 }
 
 .answer-buttons {
     display: grid;
-    gap: 12px;
+    gap: 8px;
     max-width: 600px;
-    margin: 0 auto 12px auto;
+    margin: 0 auto;
 }
 
 .answer-buttons.easy-mode {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .answer-buttons.hard-mode {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .answer-btn {
-    padding: 18px 12px;
-    font-size: 1rem;
+    padding: 14px 8px;
+    font-size: 0.9rem;
     font-weight: 600;
     background: white;
     border: 2px solid #e2e8f0;
-    border-radius: 12px;
+    border-radius: 10px;
     cursor: pointer;
     transition: all 0.3s ease;
     color: #4a5568;
     text-align: center;
-    min-height: 60px;
+    min-height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .answer-btn:hover {
@@ -418,14 +416,9 @@ body {
     margin-top: 25px;
 }
 
-/* Desktop responsiveness */
+/* Desktop - larger than 768px */
 @media (min-width: 768px) {
-    .screen {
-        max-width: 600px;
-        margin: 0 auto;
-    }
-    
-    #game-screen {
+    #game-screen.active {
         max-width: 600px;
         margin: 0 auto;
         box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
@@ -434,19 +427,23 @@ body {
     }
     
     #game-screen.active .game-header {
-        position: sticky !important;
+        position: sticky;
+        top: 0;
         border-radius: 15px 15px 0 0;
-        display: flex !important;
     }
     
     #game-screen.active .answer-panel {
-        position: sticky !important;
+        position: sticky;
+        bottom: 0;
         border-radius: 0 0 15px 15px;
-        display: block !important;
+    }
+    
+    .horse-images-container {
+        padding: 20px 20px 20px;
     }
 }
 
-/* Mobile optimization */
+/* Mobile - smaller than 480px */
 @media (max-width: 480px) {
     .welcome-content {
         padding: 30px 20px;
@@ -456,14 +453,16 @@ body {
         font-size: 2rem;
     }
     
-    .answer-buttons {
-        grid-template-columns: 1fr;
-        gap: 10px;
+    /* Keep grid layout for hard mode on mobile */
+    .answer-buttons.hard-mode {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 6px;
     }
     
     .answer-btn {
-        padding: 20px 15px;
-        font-size: 0.95rem;
+        padding: 12px 4px;
+        font-size: 0.8rem;
+        min-height: 45px;
     }
     
     #game-screen.active .game-header {
@@ -471,6 +470,23 @@ body {
     }
     
     .horse-images-container {
-        padding: 52px 15px 0;
+        padding: 70px 15px 180px;
+    }
+    
+    #game-screen.active .answer-panel {
+        padding: 12px;
+    }
+}
+
+/* Very small screens - smaller than 360px */
+@media (max-width: 360px) {
+    .answer-buttons.hard-mode {
+        gap: 4px;
+    }
+    
+    .answer-btn {
+        padding: 10px 2px;
+        font-size: 0.75rem;
+        min-height: 40px;
     }
 }

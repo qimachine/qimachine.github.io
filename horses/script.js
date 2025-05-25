@@ -175,6 +175,9 @@ function loadQuestion() {
     
     // Reset answer buttons
     resetAnswerButtons();
+    
+    // Scroll to top of images container
+    horseImagesContainer.scrollTop = 0;
 }
 
 function updateProgress() {
