@@ -208,6 +208,13 @@ function loadHorseImages() {
         
         horseImagesContainer.appendChild(img);
     }
+    
+    // Add spacer div after all images
+    const spacer = document.createElement('div');
+    spacer.className = 'image-spacer';
+    spacer.style.height = '200px';
+    spacer.style.width = '100%';
+    horseImagesContainer.appendChild(spacer);
 }
 
 function generateAnswerOptions() {

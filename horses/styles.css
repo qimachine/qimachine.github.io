@@ -234,7 +234,7 @@ body {
 /* Horse Images Container */
 .horse-images-container {
     flex: 1;
-    padding: 80px 20px 200px; /* Top padding for header, bottom padding for answer panel */
+    padding: 80px 20px 0; /* Top padding for header only */
     display: flex;
     justify-content: center;
     overflow-y: auto;
@@ -253,6 +253,11 @@ body {
     border-radius: 15px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease;
+}
+
+/* Spacer to ensure last image isn't hidden */
+.image-spacer {
+    flex-shrink: 0;
 }
 
 /* Answer Panel */
