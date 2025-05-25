@@ -225,19 +225,21 @@ body {
 /* Horse Images Container */
 .horse-images-container {
     flex: 1;
-    padding: 76px 20px 180px;
+    padding: 20px 20px 180px;
     display: flex;
     justify-content: center;
     overflow-y: auto;
+    /* margin-bottom: 55px; */
 }
 
 #horse-images {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
     max-width: 600px;
     width: 100%;
-    padding-bottom: 12px;
+    padding-bottom: 25px;
+    margin-bottom: 55px;
 }
 
 .horse-image {
@@ -247,21 +249,18 @@ body {
     transition: transform 0.3s ease;
 }
 
-.horse-image:hover {
-    transform: scale(1.02);
-}
-
 /* Answer Panel */
 .answer-panel {
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(255, 255, 255, 0.98);
+    background: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(15px);
     padding: 20px;
     z-index: 200;
     box-shadow: 0 -5px 25px rgba(0, 0, 0, 0.15);
+    margin-top: 16px;
 }
 
 .answer-buttons {
@@ -467,6 +466,6 @@ body {
     }
     
     .horse-images-container {
-        padding: 70px 15px 200px;
+        padding: 52px 15px 200px;
     }
 }
