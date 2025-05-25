@@ -185,11 +185,15 @@ body {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
     padding: 15px 20px;
-    display: flex;
+    display: none !important; /* Hide by default with !important */
     justify-content: space-between;
     align-items: center;
     z-index: 100;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#game-screen.active .game-header {
+    display: flex !important; /* Show only when game screen is active */
 }
 
 .score-display {
@@ -251,6 +255,7 @@ body {
     transition: transform 0.3s ease;
 }
 
+/* Answer Panel */
 .answer-panel {
     position: fixed;
     bottom: 0;
@@ -261,11 +266,11 @@ body {
     padding: 20px;
     z-index: 200;
     box-shadow: 0 -5px 25px rgba(0, 0, 0, 0.15);
-    display: none; /* Hide by default */
+    display: none !important; /* Hide by default with !important */
 }
 
-#game-screen .answer-panel {
-    display: block; /* Show only in game screen */
+#game-screen.active .answer-panel {
+    display: block !important; /* Show only when game screen is active */
 }
 
 .answer-buttons {
@@ -428,14 +433,16 @@ body {
         overflow: hidden;
     }
     
-    .game-header {
-        position: sticky;
+    #game-screen.active .game-header {
+        position: sticky !important;
         border-radius: 15px 15px 0 0;
+        display: flex !important;
     }
     
-    .answer-panel {
-        position: sticky;
+    #game-screen.active .answer-panel {
+        position: sticky !important;
         border-radius: 0 0 15px 15px;
+        display: block !important;
     }
 }
 
@@ -459,7 +466,7 @@ body {
         font-size: 0.95rem;
     }
     
-    .game-header {
+    #game-screen.active .game-header {
         padding: 12px 15px;
     }
     
