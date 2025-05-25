@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horse Matching Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Welcome Screen -->
+    <div id="welcome-screen" class="screen active">
+        <div class="welcome-content">
+            <h1>🐴 Horse Matching Game</h1>
+            <p>Test your knowledge of our beautiful horses!</p>
+            <div class="game-instructions">
+                <h3>How to Play:</h3>
+                <ul>
+                    <li>You'll see images of 20 different horses</li>
+                    <li>Choose the correct name from 4 options</li>
+                    <li>Try to get the highest score possible!</li>
+                </ul>
+            </div>
+            <div class="mode-buttons">
+                <button id="start-easy" class="btn-mode btn-easy">
+                    Easy Mode
+                    <div class="mode-description">4 possible answers</div>
+                </button>
+                <button id="start-hard" class="btn-mode btn-hard">
+                    Hard Mode
+                    <div class="mode-description">8 possible answers</div>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Game Screen -->
+    <div id="game-screen" class="screen">
+        <!-- Header with score and progress -->
+        <div class="game-header">
+            <div class="score-display">
+                <span id="score">Score: 0/0</span>
+            </div>
+            <div class="progress-display">
+                <span id="progress">1 of 20</span>
+                <div class="progress-bar">
+                    <div id="progress-fill"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Horse images container -->
+        <div class="horse-images-container">
+            <div id="horse-images"></div>
+        </div>
+
+        <!-- Answer panel fixed at bottom -->
+        <div class="answer-panel">
+            <div class="answer-buttons" id="answer-buttons-container">
+                <button class="answer-btn" data-answer="0"></button>
+                <button class="answer-btn" data-answer="1"></button>
+                <button class="answer-btn" data-answer="2"></button>
+                <button class="answer-btn" data-answer="3"></button>
+                <button class="answer-btn" data-answer="4"></button>
+                <button class="answer-btn" data-answer="5"></button>
+                <button class="answer-btn" data-answer="6"></button>
+                <button class="answer-btn" data-answer="7"></button>
+            </div>
+        </div>
+
+        <!-- Feedback overlay -->
+        <div id="feedback-overlay" class="feedback-overlay">
+            <div class="feedback-content">
+                <div id="feedback-text"></div>
+                <button id="next-question" class="btn btn-primary">Next Horse</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Results Screen -->
+    <div id="results-screen" class="screen">
+        <div class="results-content">
+            <h1>🏆 Game Complete!</h1>
+            <div class="final-score">
+                <h2 id="final-score-text">Your Score: 0/20</h2>
+                <div id="score-message"></div>
+            </div>
+            <div class="results-actions">
+                <button id="play-again" class="btn btn-primary">Play Again</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
