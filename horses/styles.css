@@ -251,7 +251,6 @@ body {
     transition: transform 0.3s ease;
 }
 
-/* Answer Panel */
 .answer-panel {
     position: fixed;
     bottom: 0;
@@ -262,6 +261,11 @@ body {
     padding: 20px;
     z-index: 200;
     box-shadow: 0 -5px 25px rgba(0, 0, 0, 0.15);
+    display: none; /* Hide by default */
+}
+
+#game-screen .answer-panel {
+    display: block; /* Show only in game screen */
 }
 
 .answer-buttons {
