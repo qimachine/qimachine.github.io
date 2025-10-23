@@ -23,7 +23,7 @@ body {
 
 .about {
   padding: 4.5rem 0 0;
-  margin-bottom: 0;
+  margin-bottom: 3rem;
 }
 
 .intro-text {
@@ -39,6 +39,7 @@ body {
 .hero {
   width: 1400px;
   margin: 0 auto 4rem;
+  padding: 0 2rem;
 }
 
 .ai-hero-container {
@@ -798,27 +799,31 @@ section {
 }
 
 .hero-card {
-  flex: 1;
   background: rgb(245, 244, 241);
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  width: calc((1400px - 4rem - 4rem) / 3);
   display: flex;
   flex-direction: column;
 }
 
 .hero-content {
   padding: 2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  max-width: 600px; /* Constrain text width for readability */
+  margin: 0 auto;
 }
 
 .hero-image {
   width: 100%;
   height: 0;
-  padding-bottom: 61.8%;
+  padding-bottom: 24.72%; /* 40% of the original 61.8% */
   background-size: cover;
   background-position: center;
   position: relative;
+
 }
 
 .hero-image h1 {
@@ -941,7 +946,7 @@ section {
 
   .intro {
     padding: 6rem 0 0;
-    margin-bottom: 0;
+    
   }
 
   .intro-text {
@@ -949,8 +954,7 @@ section {
   }
 
   .hero {
-    width: 100%;
-
+    padding: 0 1rem;
   }
 
   
