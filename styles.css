@@ -271,18 +271,6 @@ section {
 
 
 
-.qi-gong-flyer {
-  position: absolute;
-  width: 333px;
-  height: auto;
-  border-radius: 20px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  top: 50%;
-  left: 50%;
-  transform: translate(-40%, -48%);
-  z-index: 3;
-}
-
 
 
 
@@ -863,10 +851,6 @@ section {
   background: url('./images/qimachine-software-development.jpeg') no-repeat left center;
 }
 
-.qigong-image {
-  background: url('./images/qimachine-qi-gong.jpg') no-repeat right 48%;
-}
-
 .hero-cta {
   display: inline-block;
   padding: 1rem 2rem;
@@ -1020,14 +1004,6 @@ section {
     display: block;
     width: fit-content;
     margin: 0 auto;
-  }
-
-  .qi-gong-flyer {
-    height: 333px;
-    width: auto;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
   }
 
   .project-container {
