@@ -646,6 +646,12 @@ section {
   color: #912626;
 }
 
+.badge-music {
+  background-color: #FFF1A8;
+  color: #8A6A00;
+}
+
+
 .badge-web {
   background-color: #B7C9FF;
   color: #1A337E;
