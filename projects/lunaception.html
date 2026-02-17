@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Basic SEO Meta Tags -->
+    <meta name="description" content="Lunaception is a privacy-first menstrual cycle tracking app using the Lunaception method - natural cycle regulation through controlled light exposure. No accounts, no data collection, fully offline.">
+    <meta name="keywords" content="lunaception, menstrual cycle tracker, period tracker, natural cycle regulation, light therapy, moon phase, ovulation tracker, privacy period app, hormone-free, iOS app">
+    <meta name="author" content="Qi Machine LLC">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Lunaception - Natural Cycle Regulation App | Qi Machine">
+    <meta property="og:description" content="A privacy-first menstrual cycle tracker using the Lunaception method. Natural cycle regulation through controlled light exposure. Your data never leaves your device.">
+    <meta property="og:image" content="https://qimachine.com/images/qi-machine-logo-icon-text-subtitle-horizontal-low-resolution.png">
+    <meta property="og:url" content="https://qimachine.com">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Lunaception - Natural Cycle Regulation App">
+    <meta name="twitter:description" content="Privacy-first menstrual cycle tracking using the Lunaception method. No accounts, no tracking, fully offline.">
+    <meta name="twitter:image" content="https://qimachine.com/images/qi-machine-logo-icon-text-subtitle-horizontal-low-resolution.png">
+
+    <!-- Additional Meta -->
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="language" content="English">
+    <meta name="theme-color" content="#2D1B4E">
+
+    <title>Lunaception - Natural Cycle Tracker | Qi Machine</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="./styles.css">
+
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+</head>
+
+<body>
+<nav class="navbar">
+    <div class="navbar-content">
+        <a href="../index.html" class="logo-link">
+            <img src="../images/qi-machine-logo-icon-text-horizontal-low-resolution.png" alt="Qi Machine" class="logo">
+        </a>
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="./index.html">Software Development</a>
+            <a href="../index.html#contact">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<main class="project-detail">
+    <div class="project-header">
+        <h1 class="project-title">Lunaception</h1>
+        <p class="project-subtitle">
+            A privacy-first menstrual cycle tracker using natural light regulation
+        </p>
+    </div>
+
+    <div class="project-images">
+        <img src="../images/lunaception/1.png" alt="Lunaception - Home View" class="project-image image-1">
+        <img src="../images/lunaception/2.png" alt="Lunaception - Calendar View" class="project-image image-2">
+        <img src="../images/logos/apple.png" alt="Apple logo" class="apple-android-logo">
+    </div>
+
+    <div class="project-content">
+        <h2>Project Overview</h2>
+        <p>
+            Lunaception is a menstrual cycle tracking app built around the Lunaception method developed
+            by Louise Lacey in 1975. The app helps users regulate their cycle naturally through controlled
+            light exposure during sleep, without hormones, devices, or medications.
+        </p>
+        <p>
+            Unlike mainstream period trackers that
+            monetize user data, Lunaception stores all data locally on device with no accounts, no
+            cloud sync, and no analytics tracking of any kind.
+        </p>
+
+        <h2>The Lunaception Method</h2>
+        <ul>
+            <li><strong>Days 1-13 & 17-29</strong> - Sleep in complete darkness to support hormone production</li>
+            <li><strong>Days 14-16 (Ovulation Window)</strong> - Use a dim nightlight to signal ovulation</li>
+            <li><strong>Goal</strong> - Natural cycle regulation by mimicking pre-electric lighting conditions</li>
+        </ul>
+        <p>
+            Before artificial lighting, research suggests women's cycles naturally aligned with the lunar
+            cycle (~29.5 days), regulated by moonlight. The Lunaception method recreates this pattern
+            using controlled bedroom lighting.
+        </p>
+
+        <h2>Core Features</h2>
+        <ul>
+            <li>Daily light protocol guidance (darkness vs. dim light)</li>
+            <li>Cycle day tracking with progress visualization</li>
+            <li>Interactive calendar with period marking and protocol adherence logging</li>
+            <li>Real-time moon phase display (8 phases, calculated locally)</li>
+            <li>Protocol adherence tracking and insights (30-day metrics)</li>
+            <li>Evening reminder notifications with dynamic content</li>
+            <li>Educational content explaining the Lunaception method and science</li>
+            <li>Full data export (CSV) and complete deletion available anytime</li>
+        </ul>
+
+        <h2>Privacy Architecture</h2>
+        <p>
+            Lunaception was designed from the ground up with privacy as the primary architectural constraint.
+        </p>
+        <ul>
+            <li>All cycle data stored in local Core Data database - never sent to any server</li>
+            <li>No account creation or login system</li>
+            <li>No third-party SDKs or advertising frameworks</li>
+            <li>Notification content contains no sensitive details</li>
+            <li>Works entirely offline - app never makes network requests</li>
+            <li>Users can delete everything at any time</li>
+        </ul>
+
+        <h2>Calendar & Tracking</h2>
+        <p>
+            The interactive calendar provides a month-by-month view with:
+        </p>
+        <ul>
+            <li>Period day marking (tap any date to mark or remove)</li>
+            <li>Ovulation window highlighting (days 14-16)</li>
+            <li>Protocol adherence indicators (checkmark/X for each logged day)</li>
+            <li>Moon phase overlays for each date</li>
+            <li>Confirmation dialogs before modifying cycle data</li>
+        </ul>
+
+        <h2>Insights Dashboard</h2>
+        <p>
+            Track progress over time with three key metrics:
+        </p>
+        <ul>
+            <li><strong>Adherence Rate</strong> - Percentage of nights protocol was followed (last 30 days)</li>
+            <li><strong>Cycle Regularity</strong> - Assessment of cycle stability (Regular / Stabilizing / Irregular)</li>
+            <li><strong>Moon Alignment</strong> - Days difference between user's cycle and lunar cycle (29.5 days)</li>
+        </ul>
+
+        <h2>Educational Content</h2>
+        <p>
+            Built-in educational resources include:
+        </p>
+        <ul>
+            <li>Complete guide to the Lunaception method and how it works</li>
+            <li>Scientific background on light exposure and reproductive hormones</li>
+            <li>Historical context of Louise Lacey's original research</li>
+            <li>15-question FAQ covering common questions and concerns</li>
+            <li>Tips for successful protocol adherence (blackout curtains, nightlight selection, etc.)</li>
+            <li>Important disclaimers about medical consultation and birth control</li>
+        </ul>
+
+        <h2>Who It's For</h2>
+        <ul>
+            <li>Women seeking natural, hormone-free cycle regulation methods</li>
+            <li>Those with irregular cycles looking for non-medical approaches</li>
+            <li>Privacy-conscious users who don't want health data monetized or tracked</li>
+            <li>People interested in circadian rhythm and light therapy research</li>
+            <li>Natural Family Planning practitioners wanting a complementary tool</li>
+            <li>Anyone curious about the connection between lunar cycles and human biology</li>
+        </ul>
+
+        <h2>Technical Implementation</h2>
+        <ul>
+            <li><strong>Platform:</strong> Native iOS (iPhone)</li>
+            <li><strong>Framework:</strong> SwiftUI</li>
+            <li><strong>Data Persistence:</strong> Core Data (local SQLite database)</li>
+            <li><strong>Architecture:</strong> MVVM with single shared ViewModel</li>
+            <li><strong>Moon Phase Calculation:</strong> Pure mathematical algorithm (no API dependency)</li>
+            <li><strong>Notifications:</strong> UNUserNotificationCenter</li>
+            <li><strong>Privacy:</strong> Zero network calls</li>
+        </ul>
+
+        <h2>Design Philosophy</h2>
+        <p>
+            The interface uses a celestial-inspired color palette (deep indigo, lunar yellow, soft lavender)
+            creating a calm, intentional atmosphere. The design prioritizes clarity - users should know
+            at a glance what tonight's protocol is and where they are in their cycle without navigating
+            complex menus.
+        </p>
+        <p>
+            Dark mode is fully supported throughout the app with carefully chosen adaptive colors that
+            maintain legibility and the celestial aesthetic in both light and dark environments.
+        </p>
+
+        <h2>Important Disclaimer</h2>
+        <p>
+            Lunaception is a wellness tracking tool based on Louise Lacey's 1975 method. It is not
+            a medical device and <strong>not a form of birth control</strong>. The app should not be
+            used to prevent pregnancy. Users with medical concerns about their menstrual cycle should
+            consult a qualified healthcare provider.
+        </p>
+
+        <h2>Download</h2>
+        <div class="app-store-links">
+            <a href="https://apps.apple.com/us/app/lunaception/id6759206005" target="_blank">
+                <img src="../images/logos/download-app-store.png" alt="Download on the App Store" class="app-store-badge">
+            </a>
+        </div>
+    </div>
+</main>
+
+<div class="footer-wrapper">
+    <section class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 class="footer-header">Contact</h4>
+                    <p><a href="mailto:rob@qimachine.com">rob@qimachine.com</a></p>
+                    <p><a href="tel:+17814607916">+1-781-460-7916</a></p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-header">Location</h4>
+                    <p>Portland, Maine, USA</p>
+                    <p>Available worldwide via Zoom</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-header">Legal</h4>
+                    <p>&copy; 2026 Qi Machine LLC</p>
+                    <p>All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<script src="../script.js"></script>
+</body>
+</html>
