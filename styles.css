@@ -461,7 +461,7 @@ h1, h2, h3, h4 {
    ============================================================ */
 .projects-grid {
   max-width: var(--max-w);
-  margin: 0 auto;
+  margin: 0 auto 100px auto;
   padding: 40px var(--gutter) clamp(60px, 8vw, 100px);
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -498,31 +498,29 @@ h1, h2, h3, h4 {
 .card-type.type-client { color: var(--yellow); }
 
 .card-images {
-  display: flex;
-  gap: 8px;
-  align-items: stretch;
   height: 400px;
-  overflow: hidden;
-  border-radius: var(--radius-sm);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-img {
-  flex: 1;
-  object-fit: cover;
-  border-radius: var(--radius-sm);
-  width: 0; /* flex will distribute equally */
-}
-
-/* Single image variant (e.g. invoice — landscape screenshot) */
-.card-images-single {
-  height: 320px;
-}
-
-.card-img-solo {
-  width: 100%;
   height: 100%;
-  object-fit: cover;
-  flex: unset;
+  width: auto;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.card-images-nophone {
+  height: 400px;
+  
+}
+
+.card-img-nophone {
+  height: 100%;
+  object-fit:cover;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .card-platform {
