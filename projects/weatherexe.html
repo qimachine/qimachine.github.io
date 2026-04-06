@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Weather.exe — Qi Machine</title>
+  <meta name="description" content="Weather.exe is a Windows 95-themed weather app for iOS and Android. Global forecasts, hourly outlooks, 10-day forecasts. No ads, no subscription.">
+  <meta name="keywords" content="weather app, windows 95, retro weather, iOS, Android, weather.exe, Qi Machine">
+  <meta name="author" content="Qi Machine LLC">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#181614">
+
+  <meta property="og:title" content="Weather.exe — Qi Machine">
+  <meta property="og:description" content="Windows 95-style weather app for iOS and Android. Global forecasts, no ads, no subscription.">
+  <meta property="og:image" content="https://qimachine.com/images/qi-machine-logo-icon-text-subtitle-horizontal-low-resolution.png">
+  <meta property="og:url" content="https://qimachine.com/projects/weatherexe.html">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Weather.exe — Qi Machine">
+  <meta name="twitter:description" content="Windows 95-style weather app for iOS and Android. Global forecasts, no ads, no subscription.">
+  <meta name="twitter:image" content="https://qimachine.com/images/qi-machine-logo-icon-text-subtitle-horizontal-low-resolution.png">
+
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar">
+    <div class="navbar-content">
+      <a href="/" class="logo-link">
+        <img src="/images/qi-machine-logo-icon-text-horizontal-low-resolution.png" alt="Qi Machine" class="logo">
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" id="navToggle">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="/#work">Work</a>
+        <a href="/#about">About</a>
+        <a href="/#contact" class="nav-cta">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PROJECT HERO -->
+  <div class="project-detail-hero">
+    <a href="/" class="project-detail-back">← All projects</a>
+    <div class="project-detail-type">App &mdash; iOS &amp; Android</div>
+    <h1>Weather.exe</h1>
+    <p class="project-detail-subtitle">
+      A fully functional weather app wrapped in a faithful Windows 95 aesthetic. 
+      Global coverage, no ads, no subscription — just the forecast.
+    </p>
+    <div class="project-detail-tags">
+      <span class="tag">SwiftUI</span>
+      <span class="tag">Kotlin</span>
+      <span class="tag">MVVM</span>
+      <span class="tag">Open-Meteo API</span>
+      <span class="tag">CoreLocation</span>
+      <span class="tag">iOS</span>
+      <span class="tag">Android</span>
+    </div>
+  </div>
+
+  <!-- SCREENSHOTS -->
+  <div class="project-screenshots">
+    <img src="/images/weatherexe/1.png" alt="Weather.exe main forecast view" class="screenshot screenshot-main">
+    <img src="/images/weatherexe/2.png" alt="Weather.exe 10-day outlook" class="screenshot screenshot-secondary">
+    <img src="/images/logos/apple-android.png" alt="Available on iOS and Android" class="platform-logo" style="position:absolute; bottom: 24px; right: var(--gutter); opacity:0.35;">
+  </div>
+
+  <!-- BODY -->
+  <div class="project-detail-body">
+
+    <div class="project-detail-content">
+
+      <h2>What it is</h2>
+      <p>
+        Weather.exe brings the Windows 95 UI to your phone's weather forecast. Every panel, title bar, 
+        and button is rebuilt from scratch in the iconic silver-gray aesthetic — beveled edges, raised panels, 
+        the classic teal desktop. It's a love letter to the golden age of desktop computing that also happens 
+        to give you an accurate, useful weather forecast.
+      </p>
+      <p>
+        The core differentiator is purely the interface. Weather data comes from Open-Meteo, which provides 
+        accurate global coverage with no API key or account required. The result is an app that's lightweight, 
+        fast, and free of third-party data entanglements.
+      </p>
+
+      <h2>Features</h2>
+      <ul>
+        <li>Current conditions — temperature, feels like, wind, precipitation, cloud cover</li>
+        <li>Hourly forecast — 48-hour scrollable outlook with icons and temperatures</li>
+        <li>10-day forecast — daily high/low with weather icons</li>
+        <li>Detailed stats — wind speed, gusts &amp; direction, sunrise/sunset, humidity, dew point, visibility, barometric pressure</li>
+        <li>Multiple saved locations — switch between any number of cities worldwide</li>
+        <li>Imperial &amp; metric units — toggle between °F/°C, mph/km/h, inches/mm</li>
+        <li>Global coverage via Open-Meteo</li>
+        <li>No ads, no account, no subscription</li>
+      </ul>
+
+      <h2>Design approach</h2>
+      <p>
+        The entire UI is built from scratch in SwiftUI (iOS) and Kotlin (Android) to faithfully replicate 
+        the Win95 aesthetic — raised and sunken bevel effects, the classic teal desktop, silver dialog 
+        panels, and the unmistakable title bar blue. The goal was to make every screen feel like a genuine 
+        Win95 dialog box while remaining practical and easy to navigate.
+      </p>
+      <p>
+        No asset packs or shortcuts were used. Each bevel, shadow, and panel border is coded directly, 
+        giving full control over fidelity and performance.
+      </p>
+
+      <h2>Technical implementation</h2>
+      <ul>
+        <li>iOS built in SwiftUI with MVVM architecture and CoreData for saved locations</li>
+        <li>Android built natively in Kotlin</li>
+        <li>Weather data: Open-Meteo API (free, no account required)</li>
+        <li>Location: CoreLocation with reverse geocoding via MapKit</li>
+        <li>No third-party analytics or tracking libraries</li>
+      </ul>
+
+      <div class="result-highlight">
+        <p>Published on both the App Store and Google Play. Built, maintained, and updated by me — this is what I do when I build for myself.</p>
+      </div>
+
+    </div>
+
+    <!-- SIDEBAR -->
+    <aside class="project-detail-sidebar">
+
+      <div class="sidebar-card">
+        <div class="sidebar-card-label">Type</div>
+        <div class="sidebar-card-value">Personal product</div>
+      </div>
+
+      <div class="sidebar-card">
+        <div class="sidebar-card-label">Platforms</div>
+        <div class="sidebar-card-value">iOS &amp; Android</div>
+      </div>
+
+      <div class="sidebar-card">
+        <div class="sidebar-card-label">Stack</div>
+        <div class="sidebar-stack">
+          <span class="stack-item">SwiftUI (iOS)</span>
+          <span class="stack-item">Kotlin (Android)</span>
+          <span class="stack-item">Open-Meteo API</span>
+          <span class="stack-item">CoreLocation / MapKit</span>
+          <span class="stack-item">CoreData</span>
+        </div>
+      </div>
+
+      <div class="sidebar-card">
+        <div class="sidebar-card-label">Download</div>
+        <div class="app-store-badges">
+          <a href="https://apps.apple.com/us/app/weather-exe/id6761195944" target="_blank" rel="noopener">
+            <img src="/images/logos/download-app-store.png" alt="Download on the App Store" class="app-badge">
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=com.qimachine.apps.weatherexe" target="_blank" rel="noopener">
+            <img src="/images/logos/get-google-play.png" alt="Get it on Google Play" class="app-badge play-store-badge">
+          </a>
+        </div>
+      </div>
+
+    </aside>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <img src="/images/qi-machine-logo-icon-text-horizontal-low-resolution.png" alt="Qi Machine" class="footer-logo">
+      <p class="footer-text">&copy; 2026 Qi Machine LLC. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="mailto:rob@qimachine.com">Email</a>
+        <a href="tel:+17814607916">Phone</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>
