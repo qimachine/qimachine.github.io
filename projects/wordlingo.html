@@ -1,210 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-          
-    <!-- Basic SEO Meta Tags -->
-    <meta name="description" content="Wordlingo - Word puzzle game with language learning in 10 languages. Daily challenges, customizable word lengths, and vocabulary building through translations and example sentences. Learn Spanish, French, German, and more.">
-    <meta name="keywords" content="word puzzle game, language learning app, vocabulary builder, word game, daily word challenge, multilingual app, educational game, Spanish French German Italian, Maine app developer">
-    <meta name="author" content="Qi Machine LLC">
-
-    <!-- Open Graph Meta Tags for Social Media -->
-    <meta property="og:title" content="Custom Software Development & Mobile Apps | Qi Machine">
-    <meta property="og:description" content="Full-stack software development services specializing in mobile apps, web applications, and enterprise systems. Over a decade of development expertise.">
-    <meta property="og:image" content="https://qimachine.com/images/qi-machine-logo-icon-text-subtitle-horizontal-low-resolution.png">
-    <meta property="og:url" content="https://qimachine.com">
-    <meta property="og:type" content="website">
-
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Custom Software Development & Mobile Apps | Qi Machine">
-    <meta name="twitter:description" content="Full-stack software development services specializing in mobile apps, web applications, and enterprise systems. Over a decade of development expertise.">
-    <meta name="twitter:image" content="https://qimachine.com/images/qi-machine-logo-icon-text-subtitle-horizontal-low-resolution.png">
-
-    <!-- Additional Meta Tags -->
-    <meta name="robots" content="index, follow">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="language" content="English">
-    <meta name="revisit-after" content="7 days">
-    <meta name="theme-color" content="#ffffff">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Wordlingo - Qi Machine</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="icon" type="image/x-icon" href="../favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
-    <link rel="manifest" href="../site.webmanifest">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Wordlingo - Word puzzle game with language learning in 10 languages. Daily challenges, customizable word lengths, and vocabulary building through translations and example sentences.">
+  <meta name="keywords" content="word puzzle game, language learning app, vocabulary builder, word game, daily word challenge, multilingual app, educational game, Spanish French German Italian">
+  <meta name="author" content="Qi Machine LLC">
+  <meta property="og:title" content="Wordlingo | Qi Machine">
+  <meta property="og:description" content="Solve word puzzles and learn new languages simultaneously. 10 languages, daily challenges, vocabulary building.">
+  <meta property="og:image" content="https://qimachine.com/images/qi-machine-logo-icon-text-subtitle-horizontal-low-resolution.png">
+  <meta property="og:url" content="https://qimachine.com/projects/wordlingo.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Wordlingo | Qi Machine">
+  <meta name="twitter:description" content="Solve word puzzles and learn new languages simultaneously.">
+  <meta name="twitter:image" content="https://qimachine.com/images/qi-machine-logo-icon-text-subtitle-horizontal-low-resolution.png">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#181614">
+  <title>Wordlingo | Qi Machine</title>
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="navbar-content">
-            <a href="../index.html" class="logo-link">
-              <img src="../images/qi-machine-logo-icon-text-horizontal-low-resolution.png" alt="Qi Machine" class="logo">
-            </a>
-            <div class="nav-links">
-              <a href="../index.html">Home</a>
-              <a href="./index.html">Software Development</a>
-              <a href="../index.html#contact">Contact</a>
-            </div>
-        </div>
-    </nav>
 
-    <main class="project-detail">
-        <div class="project-header">
-            <h1 class="project-title">Wordlingo</h1>
-            <p class="project-subtitle">Solve word puzzles, learn new languages, and build your vocabulary - all in one game!</p>
-        </div>
+  <nav class="navbar">
+    <div class="navbar-content">
+      <a href="../index.html" class="logo-link">
+        <img src="../images/qi-machine-logo-icon-text-subtitle-horizontal-low-resolution.png" alt="Qi Machine" class="logo">
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" id="navToggle">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="../index.html#work">Work</a>
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#contact" class="nav-cta">Contact</a>
+      </div>
+    </div>
+  </nav>
 
-        <div class="project-images">
-            <img src="../images/wordlingo/1.png" alt="Wordlingo Screenshot 1" class="project-image image-1">
-            <img src="../images/wordlingo/2.png" alt="Wordlingo Screenshot 2" class="project-image image-2">
-            <img src="../images/logos/apple-android.png" alt="Apple, Android logo" class="apple-android-logo">
-        </div>
+  <div class="project-detail-hero">
+    <a href="../index.html#work" class="project-detail-back">&larr; All projects</a>
+    <div class="project-detail-type type-app">App &mdash; iOS &amp; Android</div>
+    <h1>Wordlingo</h1>
+    <p class="project-detail-subtitle">Word puzzle game that teaches you a new language as you play. Guess the word, then see its translation and usage in 10 languages.</p>
+    <div class="project-detail-tags">
+      <span class="tag">SwiftUI</span>
+      <span class="tag">Kotlin</span>
+      <span class="tag">Core Data</span>
+      <span class="tag">MVVM</span>
+    </div>
+  </div>
 
-        <div class="project-content">
-          <h2>Project Overview</h2>
-          <p>Wordlingo is an innovative word puzzle game that combines the addictive mechanics of word-guessing games with language learning functionality. The app challenges users to guess hidden words while simultaneously building their vocabulary in up to 10 different languages. After solving each puzzle, users see translations and example sentences to reinforce language learning in a fun, engaging way.</p>
-         
-          <h2>Features</h2>
-          <p>The app offers a complete word puzzle and language learning experience:</p>
-          <ul>
-            <li>Game Mechanics:
-              <ul>
-                <li>Daily challenge with a new unique word every day</li>
-                <li>Random puzzle mode with customizable word length (4, 5, or 6 letters)</li>
-                <li>Classic word-guessing gameplay with letter position feedback</li>
-                <li>Shareable results to challenge friends</li>
-              </ul>
-            </li>
-            <li>Language Learning System:
-              <ul>
-                <li>Support for 10 languages: Spanish, French, German, Italian, Chinese, Japanese, Korean, Arabic, Russian, and Portuguese</li>
-                <li>Word translations with example sentences in context</li>
-                <li>Vocabulary reinforcement through repeated gameplay</li>
-                <li>Learning integrated seamlessly with entertainment</li>
-              </ul>
-            </li>
-            <li>Progress Tracking:
-              <ul>
-                <li>Comprehensive statistics dashboard</li>
-                <li>Current and best streak tracking</li>
-                <li>Success rate monitoring</li>
-                <li>Complete history of solved puzzles</li>
-              </ul>
-            </li>
-            <li>User Experience:
-              <ul>
-                <li>Clean, intuitive interface</li>
-                <li>Smooth animations and visual feedback</li>
-                <li>Onboarding tutorial for new users</li>
-                <li>Optimized for portrait mode on iPhone and iPad</li>
-              </ul>
-            </li>
-          </ul>
-         
-          <h2>Technical Details</h2>
-          <p>Built natively for both iOS and Android platforms:</p>
-          <ul>
-            <li>iOS Development:
-              <ul>
-                <li>SwiftUI framework for reactive user interface</li>
-                <li>MVVM (Model-View-ViewModel) design pattern</li>
-                <li>Core Data for persistent storage</li>
-                <li>Efficient state management with Combine framework</li>
-              </ul>
-            </li>
-            <li>Android Development:
-              <ul>
-                <li>Kotlin as primary language</li>
-                <li>MVVM architecture with LiveData and ViewModel</li>
-                <li>Room database for local data persistence</li>
-                <li>Coroutines for asynchronous operations</li>
-              </ul>
-            </li>
-            <li>Shared Architecture Concepts:
-              <ul>
-                <li>Repository pattern for data operations</li>
-                <li>Clean Architecture principles</li>
-                <li>Dependency injection</li>
-                <li>Unit and UI testing across platforms</li>
-              </ul>
-            </li>
-            <li>Data Management:
-              <ul>
-                <li>Local database for word lists and translations</li>
-                <li>Structured data models for game progress</li>
-                <li>Efficient language resource handling</li>
-                <li>CSV parsing for translation imports</li>
-                <li>Cross-platform sync capabilities</li>
-              </ul>
-            </li>
-            <li>User Interface:
-              <ul>
-                <li>Custom animations for game feedback</li>
-                <li>Responsive layout adaptable to different screen sizes</li>
-                <li>Accessible design with clear visual cues</li>
-                <li>Material Design principles on Android</li>
-                <li>Optimized for one-handed gameplay on both platforms</li>
-              </ul>
-            </li>
-          </ul>
-         
-          <h2>Development Process</h2>
-          <p>The development of Wordlingo showcases our ability to create engaging, educational apps that blend entertainment with practical utility:</p>
-          <ul>
-            <li>Concept development through user research and market analysis</li>
-            <li>UI/UX design with focus on simplicity and engagement</li>
-            <li>Implementation of complex game logic with SwiftUI</li>
-            <li>Optimization for performance across all iOS devices</li>
-            <li>Integration of multilingual content with proper localization handling</li>
-            <li>Rigorous testing for gameplay balance and educational value</li>
-          </ul>
-         
-          <h2>Download Now</h2>
-          <div class="app-store-links">
-            <a href="https://apps.apple.com/us/app/wordlingo-learn-as-you-play/id6742204931" target="_blank">
-              <img src="../images/logos/download-app-store.png" alt="Download on the App Store" class="app-store-badge">
-            </a>
-            <a href="https://play.google.com/store/apps/details?id=com.qimachine.apps.wordlingo" target="_blank">
-              <img src="../images/logos/get-google-play.png" alt="Get it on Google Play" class="app-store-badge play-store-badge">
-            </a>
-          </div>
-        </div>
-    </main>
+  <div class="project-screenshots">
+    <img src="../images/wordlingo/2.png" alt="Wordlingo Screenshot 2" class="screenshot screenshot-secondary">
+    <img src="../images/wordlingo/1.png" alt="Wordlingo Screenshot 1" class="screenshot screenshot-main">
+  </div>
 
-    <div class="footer-wrapper">
-      <section class="footer">
-          <div class="container">
-              <div class="footer-content">
-                  <div class="footer-section">
-                      <h4 class="footer-header">Contact</h4>
-                      <p><a href="mailto:rob@qimachine.com">rob@qimachine.com</a></p>
-                      <p><a href="tel:+17814607916">+1-781-460-7916</a></p>
-                  </div>
-                  <div class="footer-section">
-                      <h4 class="footer-header">Location</h4>
-                      <p>Portland, Maine, USA</p>
-                      <p>Available worldwide via Zoom</p>
-                  </div>
-                  <div class="footer-section">
-                      <h4 class="footer-header">Legal</h4>
-                      <p>&copy; 2026 Qi Machine LLC</p>
-                      <p>All rights reserved</p>
-                  </div>
-              </div>
-          </div>
-      </section>
+  <div class="project-detail-body">
+    <div class="project-detail-content">
+
+      <h2>Project Overview</h2>
+      <p>Wordlingo combines the addictive mechanics of word-guessing games with genuine language learning. After solving each puzzle, users see the word's translation and an example sentence in up to 10 languages — reinforcing vocabulary in context, not in a vacuum.</p>
+
+      <h2>Features</h2>
+      <ul>
+        <li><strong>Daily challenge</strong> — a new unique word every day</li>
+        <li><strong>Random mode</strong> — customizable word length (4, 5, or 6 letters) for unlimited play</li>
+        <li><strong>10 languages</strong> — Spanish, French, German, Italian, Chinese, Japanese, Korean, Arabic, Russian, and Portuguese</li>
+        <li><strong>Translations with context</strong> — example sentences show words in real usage</li>
+        <li><strong>Shareable results</strong> — challenge friends with your result grid</li>
+        <li><strong>Statistics dashboard</strong> — streaks, success rate, and full puzzle history</li>
+      </ul>
+
+      <h2>Technical Implementation</h2>
+      <ul>
+        <li><strong>iOS:</strong> SwiftUI, MVVM, Core Data for persistence, Combine for state management</li>
+        <li><strong>Android:</strong> Kotlin, MVVM, Room database, Coroutines</li>
+        <li><strong>Data:</strong> Local word and translation database with CSV-sourced multilingual content</li>
+        <li><strong>Architecture:</strong> Repository pattern, clean architecture principles across both platforms</li>
+      </ul>
+
     </div>
 
-    <script src="../script.js"></script>
+    <aside class="project-detail-sidebar">
+
+      <div class="sidebar-card">
+        <div class="sidebar-card-label">Type</div>
+        <div class="sidebar-card-value">Personal App</div>
+      </div>
+
+      <div class="sidebar-card">
+        <div class="sidebar-card-label">Platforms</div>
+        <div class="sidebar-stack">
+          <div class="stack-item">iOS</div>
+          <div class="stack-item">Android</div>
+        </div>
+      </div>
+
+      <div class="sidebar-card">
+        <div class="sidebar-card-label">Tech Stack</div>
+        <div class="sidebar-stack">
+          <div class="stack-item">SwiftUI</div>
+          <div class="stack-item">Kotlin</div>
+          <div class="stack-item">Core Data</div>
+          <div class="stack-item">Room DB</div>
+          <div class="stack-item">MVVM</div>
+        </div>
+      </div>
+
+      <div class="sidebar-card">
+        <div class="sidebar-card-label">Download</div>
+        <div class="app-store-badges">
+          <a href="https://apps.apple.com/us/app/wordlingo-learn-as-you-play/id6742204931" target="_blank">
+            <img src="../images/logos/download-app-store.png" alt="Download on the App Store" class="app-badge">
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=com.qimachine.apps.wordlingo" target="_blank">
+            <img src="../images/logos/get-google-play.png" alt="Get it on Google Play" class="app-badge">
+          </a>
+        </div>
+      </div>
+
+    </aside>
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <img src="../images/qi-machine-logo-icon-text-horizontal-low-resolution.png" alt="Qi Machine LLC" class="footer-logo">
+      <p class="footer-text">&copy; 2026 Qi Machine LLC. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="mailto:rob@qimachine.com">Email</a>
+        <a href="tel:+17814607916">Phone</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
 </body>
 </html>
