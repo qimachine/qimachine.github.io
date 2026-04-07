@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FarmWeather - Free 14-day agricultural weather forecast for iOS with 28 metrics including soil temperature, soil moisture, evapotranspiration, and CAPE. Designed for farmers and growers.">
+  <meta name="keywords" content="farm weather app, agricultural weather, farmer weather forecast, soil temperature, soil moisture, evapotranspiration, crop weather, 14-day forecast, iOS weather app, farming app">
+  <meta name="author" content="Qi Machine LLC">
+  <meta property="og:title" content="FarmWeather - Agricultural Weather Forecast | Qi Machine">
+  <meta property="og:description" content="Free 14-day weather forecast with 28 agricultural metrics including soil temperature, soil moisture, CAPE, and evapotranspiration. Built for farmers and growers.">
+  <meta property="og:image" content="https://qimachine.com/images/qi-machine-logo-icon-text-subtitle-horizontal-low-resolution.png">
+  <meta property="og:url" content="https://qimachine.com/projects/farmweather.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="FarmWeather - Agricultural Weather Forecast | Qi Machine">
+  <meta name="twitter:description" content="Free 14-day weather forecast with 28 agricultural metrics. Built for farmers and growers worldwide.">
+  <meta name="twitter:image" content="https://qimachine.com/images/qi-machine-logo-icon-text-subtitle-horizontal-low-resolution.png">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#181614">
+  <title>FarmWeather - Agricultural Weather Forecast | Qi Machine</title>
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="navbar-content">
+      <a href="../index.html" class="logo-link">
+        <img src="../images/qi-machine-logo-icon-text-subtitle-horizontal-low-resolution.png" alt="Qi Machine" class="logo">
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" id="navToggle">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="../index.html#work">Work</a>
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#contact" class="nav-cta">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="project-detail-hero">
+    <a href="../index.html#work" class="project-detail-back">&larr; All projects</a>
+    <div class="project-detail-type type-app">App &mdash; iOS</div>
+    <h1>FarmWeather</h1>
+    <p class="project-detail-subtitle">Free 14-day agricultural weather forecast with 28 metrics built for farmers and growers. Soil temperature, evapotranspiration, CAPE, and more.</p>
+    <div class="project-detail-tags">
+      <span class="tag">SwiftUI</span>
+      <span class="tag">Open-Meteo</span>
+      <span class="tag">Apple Charts</span>
+      <span class="tag">MapKit</span>
+      <span class="tag">MVVM</span>
+    </div>
+  </div>
+
+  <div class="project-screenshots">
+    <img src="../images/farmweather/2.png" alt="FarmWeather - 14-Day Forecast Charts" class="screenshot screenshot-secondary">
+    <img src="../images/farmweather/1.png" alt="FarmWeather - Today Dashboard" class="screenshot screenshot-main">
+  </div>
+
+  <div class="project-detail-body">
+    <div class="project-detail-content">
+
+      <h2>Project Overview</h2>
+      <p>FarmWeather is a free weather forecast app designed specifically for farmers, growers, and anyone who works the land. It provides a 14-day forecast for any location worldwide, with 28 weather metrics tailored to agricultural decision-making — including data points that simply don't exist in consumer weather apps.</p>
+      <p>The core differentiator is depth: metrics like Soil Temperature, Soil Moisture, Vapor Pressure Deficit, Evapotranspiration, and CAPE give growers the information they need for planting, irrigation, spray application, and harvest planning — all in a clean, scrollable chart interface.</p>
+
+      <h2>Agricultural Metrics</h2>
+      <ul>
+        <li><strong>Temperature</strong> — 2 m, 80 m altitude, and apparent temperature</li>
+        <li><strong>Wind</strong> — Speed, direction, and gusts at 10 m (critical for spray application)</li>
+        <li><strong>Precipitation</strong> — Rain, showers, snowfall, snow depth, and probability</li>
+        <li><strong>Soil</strong> — Soil temperature (0 cm) and soil moisture (0–1 cm depth)</li>
+        <li><strong>Evapotranspiration</strong> — ET and ET0 FAO reference for irrigation scheduling</li>
+        <li><strong>Atmosphere</strong> — Freezing level height, visibility, vapor pressure deficit, and CAPE</li>
+        <li><strong>Moon</strong> — Current phase and age</li>
+      </ul>
+
+      <h2>Core Features</h2>
+      <ul>
+        <li>Free 14-day forecast for any location worldwide</li>
+        <li>28 metrics with agricultural descriptions — numbers in context, not just raw data</li>
+        <li>Interactive scrolling charts — swipe through 14 days of hourly data</li>
+        <li>Imperial and metric unit switching</li>
+        <li>Moon phase on the main dashboard</li>
+        <li>No account or sign-in required</li>
+        <li>Optional ad removal via annual subscription</li>
+      </ul>
+
+      <h2>Technical Implementation</h2>
+      <ul>
+        <li><strong>Platform:</strong> Native iOS (iPhone and iPad)</li>
+        <li><strong>Framework:</strong> SwiftUI with Apple Charts</li>
+        <li><strong>Weather Data:</strong> Open-Meteo API (open-source, no API key required)</li>
+        <li><strong>Architecture:</strong> MVVM with Combine</li>
+        <li><strong>Location Search:</strong> MapKit MKLocalSearchCompleter</li>
+        <li><strong>Monetization:</strong> Google AdMob with RevenueCat subscription management</li>
+      </ul>
+
+    </div>
+
+    <aside class="project-detail-sidebar">
+
+      <div class="sidebar-card">
+        <div class="sidebar-card-label">Type</div>
+        <div class="sidebar-card-value">Personal App</div>
+      </div>
+
+      <div class="sidebar-card">
+        <div class="sidebar-card-label">Platforms</div>
+        <div class="sidebar-stack">
+          <div class="stack-item">iOS</div>
+        </div>
+      </div>
+
+      <div class="sidebar-card">
+        <div class="sidebar-card-label">Tech Stack</div>
+        <div class="sidebar-stack">
+          <div class="stack-item">SwiftUI</div>
+          <div class="stack-item">Apple Charts</div>
+          <div class="stack-item">Open-Meteo</div>
+          <div class="stack-item">MapKit</div>
+          <div class="stack-item">MVVM / Combine</div>
+          <div class="stack-item">RevenueCat</div>
+        </div>
+      </div>
+
+      <div class="sidebar-card">
+        <div class="sidebar-card-label">Download</div>
+        <div class="app-store-badges">
+          <a href="https://apps.apple.com/us/app/farmweather/id6445936214" target="_blank">
+            <img src="../images/logos/download-app-store.png" alt="Download on the App Store" class="app-badge">
+          </a>
+        </div>
+      </div>
+
+    </aside>
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <img src="../images/qi-machine-logo-icon-text-horizontal-low-resolution.png" alt="Qi Machine LLC" class="footer-logo">
+      <p class="footer-text">&copy; 2026 Qi Machine LLC. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="mailto:rob@qimachine.com">Email</a>
+        <a href="tel:+17814607916">Phone</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
