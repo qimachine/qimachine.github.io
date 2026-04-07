@@ -497,11 +497,20 @@ h1, h2, h3, h4 {
 .card-type.type-app    { color: var(--orange); }
 .card-type.type-client { color: var(--yellow); }
 
+.card-image-wrap {
+  display: flex;
+  justify-content: center;  /* horizontal center */
+  align-items: center;      /* vertical center */
+  margin-bottom: 18px;
+}
+
 .card-images {
   height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 18px;
+  margin-bottom: 18px;
 }
 
 .card-img {
@@ -511,9 +520,14 @@ h1, h2, h3, h4 {
   border-radius: 10px;
 }
 
+.h-600 {
+  height: 600px;
+}
+
 .card-images-nophone {
   height: 400px;
-  
+    margin-top: 18px;
+  margin-bottom: 18px;
 }
 
 .card-img-nophone {
