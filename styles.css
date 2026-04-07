@@ -822,15 +822,10 @@ footer {
   box-shadow: 0 24px 60px rgba(0,0,0,0.4);
 }
 
-.screenshot-main {
+.screenshot-main,
+.screenshot-secondary {
   height: clamp(280px, 35vw, 480px);
   width: auto;
-}
-
-.screenshot-secondary {
-  height: clamp(230px, 28vw, 380px);
-  width: auto;
-  opacity: 0.85;
 }
 
 .screenshot-wide {
@@ -948,11 +943,12 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  align-items: center;
 }
 
 .app-badge {
-  height: 42px;
-  width: auto;
+  width: 100%;
+  height: auto;
   border-radius: 8px;
   transition: opacity var(--transition);
 }
@@ -1059,8 +1055,6 @@ footer {
   .project-screenshots {
     gap: 12px;
   }
-
-  .screenshot-secondary { display: none; }
 
   .footer-inner {
     flex-direction: column;
