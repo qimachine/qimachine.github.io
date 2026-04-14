@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="dissolve: sleep induction - a 5-minute hypnagogic sleep induction app for iOS. Watch shifting light dissolve, let audio carry you under.">
+  <meta name="keywords" content="sleep app, sleep induction, hypnagogia, hypnagogic, insomnia, sleep aid, iOS sleep, calm, meditation, dissolve">
+  <meta name="author" content="Qi Machine LLC">
+  <meta property="og:title" content="dissolve | Qi Machine">
+  <meta property="og:description" content="A 5-minute sleep induction designed to guide you into the hypnagogic state. Watch the light dissolve, let the audio carry you under.">
+  <meta property="og:image" content="https://qimachine.com/images/qi-machine-logo-icon-text-subtitle-horizontal-low-resolution.png">
+  <meta property="og:url" content="https://qimachine.com/projects/dissolve.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="dissolve | Qi Machine">
+  <meta name="twitter:description" content="A 5-minute sleep induction designed to guide you into the hypnagogic state.">
+  <meta name="twitter:image" content="https://qimachine.com/images/qi-machine-logo-icon-text-subtitle-horizontal-low-resolution.png">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#000000">
+  <title>dissolve | Qi Machine</title>
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="navbar-content">
+      <a href="../index.html" class="logo-link">
+        <img src="../images/qi-machine-logo-icon-text-subtitle-horizontal-low-resolution.png" alt="Qi Machine" class="logo">
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" id="navToggle">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="../index.html#work">Work</a>
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#contact" class="nav-cta">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="project-detail-hero">
+    <a href="./index.html" class="project-detail-back">&larr; All projects</a>
+    <div class="project-detail-type type-app">App &mdash; iOS</div>
+    <h1>dissolve</h1>
+    <p class="project-detail-subtitle">A five-minute sleep induction built around the hypnagogic state - the threshold between waking and sleep where the mind loosens its grip. Watch a field of shifting light dissolve. When prompted, put the phone down. Let the audio carry you under.</p>
+    <div class="project-detail-tags">
+      <span class="tag">SwiftUI</span>
+      <span class="tag">AVAudioEngine</span>
+      <span class="tag">iOS</span>
+    </div>
+  </div>
+
+  <div class="project-screenshots">
+    <img src="../images/dissolve/1.png" alt="Dissolve Pro Screenshot 1" class="screenshot screenshot-secondary">
+    <img src="../images/dissolve/2.png" alt="Dissolve Screenshot 2" class="screenshot screenshot-main">
+  </div>
+
+  <div class="project-detail-body">
+    <div class="project-detail-content">
+
+      <h2>Project Overview</h2>
+      <p>dissolve is a sleep induction tool built around one idea: the hypnagogic state. Hypnagogia is the threshold between waking and sleep - where thoughts loosen, imagery drifts in, and the mind begins to let go. Most sleep apps try to distract you into unconsciousness. dissolve tries to take you there directly, through a five-minute sequence of visual and audio stimulation designed to guide the brain toward that edge.</p>
+
+      <p>The session is structured, intentional, and has no settings to configure. You open the app, press begin, and follow it.</p>
+
+      <h2>Session Structure</h2>
+      <ul>
+        <li><strong>Minutes 0-2 (visual phase)</strong> - A full-screen particle field of slow, morphing light blobs. Colors drift across a cool-to-warm spectrum. Shapes breathe and dissolve. The display stays on; the user watches until their eyes grow heavy.</li>
+        <li><strong>Handoff</strong> - A brief crossfade to a dark screen with a single instruction: put the phone down. Close your eyes.</li>
+        <li><strong>Minutes 2-5 (audio-only phase)</strong> - The screen goes dark. Ambient music continues, gradually gaining subtle distortion and reverb - designed to follow the listener into the hypnagogic and go quiet once they're under.</li>
+        <li><strong>Complete</strong> - Audio fades to silence. Session ends.</li>
+      </ul>
+
+      <h2>Visual Design</h2>
+      <p>The particle system is rendered via a custom <code>UIView</code> subclass driven by <code>CADisplayLink</code> for smooth, frame-rate-locked animation outside of SwiftUI's rendering pipeline. Each blob is an ellipse with dynamic corner radius morphing, three-layer glow rendering using additive (<code>.screen</code>) blend mode, and independent phase clocks for scale, rotation, and color drift. The result is a field of luminous, organic light that avoids any mechanical or digital quality.</p>
+
+      <ul>
+        <li><strong>12 concurrent blobs</strong> - each with independent scale, speed, rotation, and color phase</li>
+        <li><strong>Additive blending</strong> - overlapping blobs produce luminous, natural color mixing</li>
+        <li><strong>Cool-to-warm color gradient</strong> - cyan → blue → violet → pink → amber, with each blob drifting slowly through the spectrum</li>
+        <li><strong>Intensity-driven animation</strong> - blob speed and opacity wind down over the two-minute visual window, easing the viewer toward stillness</li>
+      </ul>
+
+      <h2>Audio Design</h2>
+      <p>Audio is handled via <code>AVAudioEngine</code> with a custom signal chain, allowing real-time parameter manipulation during playback. Ambient music runs through a distortion node and a reverb node, both gradually increasing in wetness during the audio-only phase - creating a subtle sense of the sound becoming less anchored to physical space.</p>
+
+      <ul>
+        <li><strong>Looping ambient music</strong> - scheduled and looped via <code>AVAudioPlayerNode</code></li>
+        <li><strong>Progressive distortion</strong> - <code>AVAudioUnitDistortion</code> ramps from 0-18% wetness over the audio-only window</li>
+        <li><strong>Progressive reverb</strong> - <code>AVAudioUnitReverb</code> (large chamber) ramps from 0-40% wetness</li>
+        <li><strong>Scheduled yawns</strong> - a soft yawn sound fires at four points in the session (1:00, 2:07, 3:15, 4:30), a known hypnagogic induction technique leveraging the body's contagious yawn response</li>
+        <li><strong>Volume fade</strong> - master volume fades to silence in the final 30 seconds</li>
+      </ul>
+
+      <h2>Technical Implementation</h2>
+      <ul>
+        <li><strong>Platform:</strong> Native iOS (portrait)</li>
+        <li><strong>Framework:</strong> SwiftUI with UIKit interop for the particle canvas</li>
+        <li><strong>Animation:</strong> <code>CADisplayLink</code>-driven rendering at display frame rate</li>
+        <li><strong>Audio:</strong> <code>AVAudioEngine</code> with real-time distortion and reverb nodes</li>
+        <li><strong>State management:</strong> <code>@MainActor</code> ObservableObject ViewModel with phase-driven session state machine</li>
+        <li><strong>Session timing:</strong> <code>Combine</code> timer publisher at 50ms intervals driving phase transitions and audio parameter interpolation</li>
+        <li><strong>Persistence:</strong> <code>AppStorage</code> for onboarding state</li>
+        <li><strong>Screen management:</strong> Idle timer disabled during visual phase only; status bar hidden throughout</li>
+      </ul>
+
+    </div>
+
+    <aside class="project-detail-sidebar">
+
+      <div class="sidebar-card">
+        <div class="sidebar-card-label">Type</div>
+        <div class="sidebar-card-value">Personal App</div>
+      </div>
+
+      <div class="sidebar-card">
+        <div class="sidebar-card-label">Platform</div>
+        <div class="sidebar-stack">
+          <div class="stack-item">iOS</div>
+        </div>
+      </div>
+
+      <div class="sidebar-card">
+        <div class="sidebar-card-label">Tech Stack</div>
+        <div class="sidebar-stack">
+          <div class="stack-item">SwiftUI</div>
+          <div class="stack-item">AVAudioEngine</div>
+          <div class="stack-item">CADisplayLink</div>
+          <div class="stack-item">Combine</div>
+          <div class="stack-item">UIKit</div>
+        </div>
+      </div>
+
+      <div class="sidebar-card">
+        <div class="sidebar-card-label">Download</div>
+        <div class="app-store-badges">
+          <a href="https://apps.apple.com/us/app/dissolve-sleep-induction/id6762208801" target="_blank">
+            <img src="../images/logos/download-app-store.png" alt="Download on the App Store" class="app-badge">
+          </a>
+        </div>
+      </div>
+
+    </aside>
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <img src="../images/qi-machine-logo-icon-text-horizontal-low-resolution.png" alt="Qi Machine LLC" class="footer-logo">
+      <p class="footer-text">&copy; 2026 Qi Machine LLC. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="mailto:rob@qimachine.com">Email</a>
+        <a href="tel:+17814607916">Phone</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
