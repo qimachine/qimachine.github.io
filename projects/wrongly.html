@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Wrongly is a daily journaling app that helps you catch your own bad judgment sooner. Log one thing you were wrong about each day and watch patterns in your thinking emerge over time.">
+  <meta name="keywords" content="wrongly app, journaling app, self reflection app, decision journal, judgment tracker, daily journal, mistake log, cognitive bias app, iOS journal app, Android journal app">
+  <meta name="author" content="Qi Machine LLC">
+  <meta property="og:title" content="Wrongly | Qi Machine">
+  <meta property="og:description" content="A daily journal for catching your own bad judgment sooner. Log one thing you were wrong about each day.">
+  <meta property="og:image" content="https://qimachine.com/images/qi-machine-logo-icon-text-subtitle-horizontal-low-resolution.png">
+  <meta property="og:url" content="https://qimachine.com/projects/wrongly.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Wrongly | Qi Machine">
+  <meta name="twitter:description" content="A daily journal for catching your own bad judgment sooner. Log one thing you were wrong about each day.">
+  <meta name="twitter:image" content="https://qimachine.com/images/qi-machine-logo-icon-text-subtitle-horizontal-low-resolution.png">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0E0B16">
+  <title>Wrongly | Qi Machine</title>
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="navbar-content">
+      <a href="../index.html" class="logo-link">
+        <img src="../images/qi-machine-logo-icon-text-subtitle-horizontal-low-resolution.png" alt="Qi Machine" class="logo">
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" id="navToggle">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="../index.html#work">Work</a>
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#contact" class="nav-cta">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="project-detail-hero">
+    <a href="./index.html" class="project-detail-back">&larr; All projects</a>
+    <div class="project-detail-type type-app">App &mdash; iOS &amp; Android</div>
+    <h1>Wrongly</h1>
+    <p class="project-detail-subtitle">A daily journal for catching your own bad judgment sooner. One sentence a day about what you were wrong about &mdash; and a map of your blind spots over time.</p>
+    <div class="project-detail-tags">
+      <span class="tag">SwiftUI</span>
+      <span class="tag">Jetpack Compose</span>
+      <span class="tag">Core Data</span>
+      <span class="tag">Room</span>
+      <span class="tag">MVVM</span>
+    </div>
+  </div>
+
+  <div class="project-screenshots">
+    <img src="../images/wrongly/1.png" alt="Wrongly - Dashboard View" class="screenshot screenshot-main">
+    <img src="../images/wrongly/2.png" alt="Wrongly - Insights View" class="screenshot screenshot-secondary">
+  </div>
+
+  <div class="project-detail-body">
+    <div class="project-detail-content">
+
+      <h2>Project Overview</h2>
+      <p>Wrongly is a minimalist daily journaling app built on a simple premise: most people update their beliefs years too late, only after reality forces the correction. Wrongly trains that instinct on purpose, by asking one question every evening &mdash; what were you wrong about today?</p>
+      <p>No goals, no habit tracking, no highlight reel. Just a single honest sentence a day, logged in seconds, that compounds into a real map of where your judgment slips.</p>
+
+      <h2>The Idea</h2>
+      <ul>
+        <li><strong>One sentence, not an essay</strong> &mdash; a guess, an assumption, a read on someone that turned out wrong</li>
+        <li><strong>Ten seconds, no friction</strong> &mdash; open the app, write, done</li>
+        <li><strong>Compounds over time</strong> &mdash; a month of entries starts to reveal exactly where overconfidence or excess caution shows up</li>
+        <li><strong>Reframes the habit</strong> &mdash; admitting you were wrong isn't a failure to log, it's the whole point</li>
+      </ul>
+
+      <h2>Core Features</h2>
+      <ul>
+        <li>Calendar-based daily log with at-a-glance streak view</li>
+        <li>Multiple entries per day supported</li>
+        <li>Word-frequency insights that surface recurring patterns in what you get wrong</li>
+        <li>Optional daily reminder notification</li>
+        <li>Fully private &mdash; entries never leave the device</li>
+        <li>Dark, minimalist &ldquo;late-evening&rdquo; interface built around a violet accent</li>
+        <li>No account, no sign-up, no ads</li>
+      </ul>
+
+      <h2>Design Philosophy</h2>
+      <p>The visual language leans into a near-black, low-glare palette with a single glowing violet accent and a champagne-gold reserved for moments that feel like an earned achievement &mdash; streaks, milestones, the weekly recap. Everything else stays quiet so the one thing that matters, the day's entry, has nowhere to hide.</p>
+
+      <h2>Technical Implementation</h2>
+      <ul>
+        <li><strong>iOS:</strong> SwiftUI, Core Data</li>
+        <li><strong>Android:</strong> Kotlin, Jetpack Compose, Room, DataStore</li>
+        <li><strong>Architecture:</strong> MVVM</li>
+        <li><strong>Notifications:</strong> UserNotifications (iOS), AlarmManager (Android)</li>
+        <li><strong>Privacy:</strong> On-device storage only, no account required, no analytics</li>
+      </ul>
+
+    </div>
+
+    <aside class="project-detail-sidebar">
+
+      <div class="sidebar-card">
+        <div class="sidebar-card-label">Type</div>
+        <div class="sidebar-card-value">Personal App</div>
+      </div>
+
+      <div class="sidebar-card">
+        <div class="sidebar-card-label">Platforms</div>
+        <div class="sidebar-stack">
+          <div class="stack-item">iOS</div>
+          <div class="stack-item">Android</div>
+        </div>
+      </div>
+
+      <div class="sidebar-card">
+        <div class="sidebar-card-label">Tech Stack</div>
+        <div class="sidebar-stack">
+          <div class="stack-item">SwiftUI</div>
+          <div class="stack-item">Kotlin</div>
+          <div class="stack-item">Compose</div>
+          <div class="stack-item">MVVM</div>
+        </div>
+      </div>
+
+      <div class="sidebar-card">
+        <div class="sidebar-card-label">Download</div>
+        <div class="app-store-badges">
+          <a href="https://apps.apple.com/us/app/wrongly/id6803289777" target="_blank">
+            <img src="../images/logos/download-app-store.png" alt="Download on the App Store" class="app-badge">
+          </a>
+          <!-- <a href="#" target="_blank">
+            <img src="../images/logos/get-google-play.png" alt="Get it on Google Play" class="app-badge">
+          </a> -->
+        </div>
+      </div>
+
+    </aside>
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <img src="../images/qi-machine-logo-icon-text-horizontal-low-resolution.png" alt="Qi Machine LLC" class="footer-logo">
+      <p class="footer-text">&copy; 2026 Qi Machine LLC. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="mailto:rob@qimachine.com">Email</a>
+        <a href="tel:+17814607916">Phone</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
